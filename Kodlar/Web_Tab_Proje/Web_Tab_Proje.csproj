@@ -83,6 +83,7 @@
     <Content Include="css\bootstrap.min.css" />
     <Content Include="css\bootstrap.rtl.css" />
     <Content Include="css\bootstrap.rtl.min.css" />
+    <Content Include="css\background.css" />
     <Content Include="iletisim.aspx" />
     <Content Include="js\bootstrap.bundle.js" />
     <Content Include="js\bootstrap.bundle.min.js" />
@@ -91,6 +92,8 @@
     <Content Include="js\bootstrap.js" />
     <Content Include="js\bootstrap.min.js" />
     <Content Include="Resimler\arkaplan.png" />
+    <Content Include="Resimler\arkaplan_1920x1080.png" />
+    <Content Include="Resimler\arkaplan_3840x2160.png" />
     <Content Include="Resimler\kasibeyaz-bosphorus-subat-2020.png" />
     <Content Include="Web.config" />
     <Content Include="index.aspx" />
