@@ -83,6 +83,7 @@
     <Content Include="css\bootstrap.min.css" />
     <Content Include="css\bootstrap.rtl.css" />
     <Content Include="css\bootstrap.rtl.min.css" />
+    <Content Include="css\background.css" />
     <Content Include="iletisim.aspx" />
     <Content Include="js\bootstrap.bundle.js" />
     <Content Include="js\bootstrap.bundle.min.js" />
@@ -91,10 +92,45 @@
     <Content Include="js\bootstrap.js" />
     <Content Include="js\bootstrap.min.js" />
     <Content Include="Resimler\arkaplan.png" />
+    <Content Include="Resimler\arkaplan_1920x1080.png" />
+    <Content Include="Resimler\arkaplan_3840x2160.png" />
     <Content Include="Resimler\kasibeyaz-bosphorus-subat-2020.png" />
+    <Content Include="Resimler\yemekler\adana_kebabi.jpg" />
+    <Content Include="Resimler\yemekler\akdeniz_salata.jpg" />
+    <Content Include="Resimler\yemekler\ayran.jpg" />
+    <Content Include="Resimler\yemekler\beyti_kebabi.jpg" />
+    <Content Include="Resimler\yemekler\bulgur_pilavi.jpg" />
+    <Content Include="Resimler\yemekler\coban_salata.jpg" />
+    <Content Include="Resimler\yemekler\coca_cola.jpg" />
+    <Content Include="Resimler\yemekler\ezogelin_corbasi.jpg" />
+    <Content Include="Resimler\yemekler\fanta.jpg" />
+    <Content Include="Resimler\yemekler\firin_sutlac.jpg" />
+    <Content Include="Resimler\yemekler\fistikli_baklava.jpg" />
+    <Content Include="Resimler\yemekler\havuc_dilimi.jpg" />
+    <Content Include="Resimler\yemekler\ice_tea.jpg" />
+    <Content Include="Resimler\yemekler\ispanak.jpg" />
+    <Content Include="Resimler\yemekler\izmir_kofte.jpg" />
+    <Content Include="Resimler\yemekler\kahve.jpg" />
+    <Content Include="Resimler\yemekler\kunefe.jpg" />
+    <Content Include="Resimler\yemekler\mercimek_corbasi.jpg" />
+    <Content Include="Resimler\yemekler\mevsim_salata.jpg" />
+    <Content Include="Resimler\yemekler\musakka.jpg" />
+    <Content Include="Resimler\yemekler\pirinc_pilavi.jpg" />
+    <Content Include="Resimler\yemekler\profiterol.jpg" />
+    <Content Include="Resimler\yemekler\soda.jpg" />
+    <Content Include="Resimler\yemekler\soguk_baklava.jpg" />
+    <Content Include="Resimler\yemekler\sprite.jpg" />
+    <Content Include="Resimler\yemekler\su.jpg" />
+    <Content Include="Resimler\yemekler\tarhana_corbasi.jpg" />
+    <Content Include="Resimler\yemekler\tas_kebabi.jpg" />
+    <Content Include="Resimler\yemekler\tavuk_sis_kebabi.jpg" />
+    <Content Include="Resimler\yemekler\tavuk_sote.jpg" />
+    <Content Include="Resimler\yemekler\trilece.jpg" />
+    <Content Include="Resimler\yemekler\turk_kahvesi.jpg" />
     <Content Include="Web.config" />
     <Content Include="index.aspx" />
     <Content Include="Menu.aspx" />
+    <Content Include="admin.aspx" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="iletisim.aspx.cs">
@@ -125,6 +161,13 @@
     </Compile>
     <Compile Include="Menu.aspx.designer.cs">
       <DependentUpon>Menu.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin.aspx.cs">
+      <DependentUpon>admin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin.aspx.designer.cs">
+      <DependentUpon>admin.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>

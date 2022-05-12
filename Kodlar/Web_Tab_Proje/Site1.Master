@@ -11,14 +11,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="css/bootstrap.min.css" rel="stylesheet" />
     <link href="css/bootstrap.css" rel="stylesheet" />
+    <link href="css/background.css" rel="stylesheet" />
 
+   
     <style>
-        .backgroundimg {
-            background-image: url(Resimler/arkaplan.png);
-            width:auto;
-            height:auto;
 
-        }
+
         .auto-style1 {
             height: 172px;
         }
@@ -35,7 +33,7 @@
     </asp:ContentPlaceHolder>
 </head>
 <body>
-
+    
     <script src="js/bootstrap.bundle.js"></script>
 
     <div class="container-fluid" style="background-color: crimson">
@@ -64,25 +62,29 @@
                 </li>
             </li>
         </ul>
-
-    </div>
-    <div class="backgroundimg">
+        </div>
+   
+    
+    
         
-    </div>
-
+    
 
 
     <form id="form1" runat="server">
-        <div class="auto-style1">
-            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
-                <div class="auto-style2">
+       
+        
 
-                </div>
+       
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+               
 
             </asp:ContentPlaceHolder>
 
+          </form>
          
-        </div>
-    </form>
+        
+       
+
+    
 </body>
 </html>
