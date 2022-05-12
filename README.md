@@ -1,1 +1,1 @@
-# Ozak-erciyas sa as  sakfğaskfpiasgkds
+# Ozak-erciyas
