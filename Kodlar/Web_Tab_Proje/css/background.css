@@ -1,15 +1,24 @@
 ﻿body {
+   /* .background_design   
+    */
     font: 100%/1.4 Verdana, Arial, Helvetica, sans-serif;
     margin: 0px;
     padding: 0px;
-
     background-image: url('../Resimler/arkaplan_3840x2160.png');
-    background-size:auto;
-    width:fit-content;
-    height:fit-content;
+    background-size: auto;
+    width: fit-content;
+    height: fit-content;
     background-repeat: no-repeat;
     background-attachment: scroll;
     background-position: center;
-    background-size:1920px*1080px;
+    background-size: 1920px*1080px;
+     
+    .menu_resim_icerik
+{
+    width: 5px;
+    height: 5px;
+    display: inline-block;
+    margin-right: 30px;
+}
     
 }

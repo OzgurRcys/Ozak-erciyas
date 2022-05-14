@@ -95,6 +95,7 @@
     <Content Include="Resimler\arkaplan_1920x1080.png" />
     <Content Include="Resimler\arkaplan_3840x2160.png" />
     <Content Include="Resimler\kasibeyaz-bosphorus-subat-2020.png" />
+    <Content Include="Resimler\StyleSheet1.css" />
     <Content Include="Resimler\yemekler\adana_kebabi.jpg" />
     <Content Include="Resimler\yemekler\akdeniz_salata.jpg" />
     <Content Include="Resimler\yemekler\ayran.jpg" />
@@ -131,6 +132,9 @@
     <Content Include="index.aspx" />
     <Content Include="Menu.aspx" />
     <Content Include="admin.aspx" />
+    <Content Include="sepet.aspx" />
+    <Content Include="giris.aspx" />
+    <Content Include="kayit_ol.aspx" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="iletisim.aspx.cs">
@@ -168,6 +172,27 @@
     </Compile>
     <Compile Include="admin.aspx.designer.cs">
       <DependentUpon>admin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="sepet.aspx.cs">
+      <DependentUpon>sepet.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="sepet.aspx.designer.cs">
+      <DependentUpon>sepet.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="giris.aspx.cs">
+      <DependentUpon>giris.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="giris.aspx.designer.cs">
+      <DependentUpon>giris.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="kayit_ol.aspx.cs">
+      <DependentUpon>kayit_ol.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="kayit_ol.aspx.designer.cs">
+      <DependentUpon>kayit_ol.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>

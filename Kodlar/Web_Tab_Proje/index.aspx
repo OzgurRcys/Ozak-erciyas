@@ -31,7 +31,6 @@ Bugün gelenekten, geleceğe felsefesiyle bayrağı devir alan MERT ustanın kı
 
     <div margin="100px">
     <asp:Image ID="Image1" runat="server" Height="244px" ImageUrl="~/Resimler/arkaplan.png" Width="421px" />
-   
     <asp:Image  ID="Image2" runat="server" Height="244px" ImageUrl="~/Resimler/3353887.png" Width="421px"/>
     <asp:Image ID="Image3" runat="server" Height="244px" ImageUrl="~/Resimler/3014609.png" Width="421px" />
    </div>
