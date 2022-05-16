@@ -363,7 +363,6 @@
                         <td class="auto-style4">
             <asp:GridView ID="Giris_bil" runat="server" AutoGenerateColumns="False" DataKeyNames="giris_id" DataSourceID="Gir_bil_sql">
                 <Columns>
-                    <asp:CommandField ShowSelectButton="True" />
                     <asp:BoundField DataField="giris_id" HeaderText="giris_id" InsertVisible="False" ReadOnly="True" SortExpression="giris_id" />
                     <asp:BoundField DataField="kullanici_id" HeaderText="kullanici_id" SortExpression="kullanici_id" />
                     <asp:BoundField DataField="giris_mail" HeaderText="giris_mail" SortExpression="giris_mail" />
@@ -386,8 +385,8 @@
                                     giris_sifre:
                                     <asp:TextBox ID="giris_sifreTextBox" runat="server" Text='<%# Bind("giris_sifre") %>' />
                                     <br />
-                                    <asp:LinkButton ID="UpdateButton" runat="server" CausesValidation="True" CommandName="Update" Text="Güncelleştir" />
-                                    &nbsp;<asp:LinkButton ID="UpdateCancelButton" runat="server" CausesValidation="False" CommandName="Cancel" Text="İptal" />
+                                    <asp:LinkButton ID="UpdateButton" runat="server" CausesValidation="True" CommandName="Update" Text="Update" />
+                                    &nbsp;<asp:LinkButton ID="UpdateCancelButton" runat="server" CausesValidation="False" CommandName="Cancel" Text="Cancel" />
                                 </EditItemTemplate>
                                 <EditRowStyle BackColor="#2461BF" />
                                 <FooterStyle BackColor="#507CD1" Font-Bold="True" ForeColor="White" />
@@ -402,8 +401,8 @@
                                     giris_sifre:
                                     <asp:TextBox ID="giris_sifreTextBox" runat="server" Text='<%# Bind("giris_sifre") %>' />
                                     <br />
-                                    <asp:LinkButton ID="InsertButton" runat="server" CausesValidation="True" CommandName="Insert" Text="Ekle" />
-                                    &nbsp;<asp:LinkButton ID="InsertCancelButton" runat="server" CausesValidation="False" CommandName="Cancel" Text="İptal" />
+                                    <asp:LinkButton ID="InsertButton" runat="server" CausesValidation="True" CommandName="Insert" Text="Insert" />
+                                    &nbsp;<asp:LinkButton ID="InsertCancelButton" runat="server" CausesValidation="False" CommandName="Cancel" Text="Cancel" />
                                 </InsertItemTemplate>
                                 <ItemTemplate>
                                     giris_id:
@@ -418,9 +417,9 @@
                                     giris_sifre:
                                     <asp:Label ID="giris_sifreLabel" runat="server" Text='<%# Bind("giris_sifre") %>' />
                                     <br />
-                                    <asp:LinkButton ID="EditButton" runat="server" CausesValidation="False" CommandName="Edit" Text="Düzenle" />
-                                    &nbsp;<asp:LinkButton ID="DeleteButton" runat="server" CausesValidation="False" CommandName="Delete" Text="Sil" />
-                                    &nbsp;<asp:LinkButton ID="NewButton" runat="server" CausesValidation="False" CommandName="New" Text="Yeni" />
+                                    <asp:LinkButton ID="EditButton" runat="server" CausesValidation="False" CommandName="Edit" Text="Edit" />
+                                    &nbsp;<asp:LinkButton ID="DeleteButton" runat="server" CausesValidation="False" CommandName="Delete" Text="Delete" />
+                                    &nbsp;<asp:LinkButton ID="NewButton" runat="server" CausesValidation="False" CommandName="New" Text="New" />
                                 </ItemTemplate>
                                 <PagerStyle BackColor="#2461BF" ForeColor="White" HorizontalAlign="Center" />
                                 <RowStyle BackColor="#EFF3FB" />
@@ -487,7 +486,7 @@
                     </tr>
                     <tr>
                         <td class="auto-style4">
-            <asp:SqlDataSource ID="Gir_bil_sql" runat="server" ConflictDetection="CompareAllValues" ConnectionString="<%$ ConnectionStrings:Ozak_ErciyasConnectionString %>" DeleteCommand="DELETE FROM [Giris_bilgi_tablosu] WHERE [giris_id] = @original_giris_id AND [kullanici_id] = @original_kullanici_id AND [giris_mail] = @original_giris_mail AND [giris_sifre] = @original_giris_sifre" InsertCommand="INSERT INTO [Giris_bilgi_tablosu] ([kullanici_id], [giris_mail], [giris_sifre]) VALUES (@kullanici_id, @giris_mail, @giris_sifre)" OldValuesParameterFormatString="original_{0}" SelectCommand="SELECT [giris_id], [kullanici_id], [giris_mail], [giris_sifre] FROM [Giris_bilgi_tablosu]" UpdateCommand="UPDATE [Giris_bilgi_tablosu] SET [kullanici_id] = @kullanici_id, [giris_mail] = @giris_mail, [giris_sifre] = @giris_sifre WHERE [giris_id] = @original_giris_id AND [kullanici_id] = @original_kullanici_id AND [giris_mail] = @original_giris_mail AND [giris_sifre] = @original_giris_sifre" OnSelecting="SqlDataSource2_Selecting">
+            <asp:SqlDataSource ID="Gir_bil_sql" runat="server" ConflictDetection="CompareAllValues" ConnectionString="<%$ ConnectionStrings:Ozak_ErciyasConnectionString2 %>" DeleteCommand="DELETE FROM [Giris_bilgi_tablosu] WHERE [giris_id] = @original_giris_id AND [kullanici_id] = @original_kullanici_id AND [giris_mail] = @original_giris_mail AND [giris_sifre] = @original_giris_sifre" InsertCommand="INSERT INTO [Giris_bilgi_tablosu] ([kullanici_id], [giris_mail], [giris_sifre]) VALUES (@kullanici_id, @giris_mail, @giris_sifre)" OldValuesParameterFormatString="original_{0}" SelectCommand="SELECT * FROM [Giris_bilgi_tablosu]" UpdateCommand="UPDATE [Giris_bilgi_tablosu] SET [kullanici_id] = @kullanici_id, [giris_mail] = @giris_mail, [giris_sifre] = @giris_sifre WHERE [giris_id] = @original_giris_id AND [kullanici_id] = @original_kullanici_id AND [giris_mail] = @original_giris_mail AND [giris_sifre] = @original_giris_sifre" OnSelecting="SqlDataSource2_Selecting">
                 <DeleteParameters>
                     <asp:Parameter Name="original_giris_id" Type="Int32" />
                     <asp:Parameter Name="original_kullanici_id" Type="Int32" />
@@ -509,8 +508,8 @@
                     <asp:Parameter Name="original_giris_sifre" Type="String" />
                 </UpdateParameters>
             </asp:SqlDataSource>
-            <asp:SqlDataSource ID="Yemek_Id_yemek_tur_sql" runat="server" ConnectionString="<%$ ConnectionStrings:Ozak_ErciyasConnectionString %>" SelectCommand="SELECT [yemek_id], [yemek_turu_id] FROM [Yemek_kategori]"></asp:SqlDataSource>
-            <asp:SqlDataSource ID="Menu_sql" runat="server" ConflictDetection="CompareAllValues" ConnectionString="<%$ ConnectionStrings:Ozak_ErciyasConnectionString %>" DeleteCommand="DELETE FROM [Yemek_menü] WHERE [yemek_id] = @original_yemek_id AND [yemek_adi] = @original_yemek_adi AND [yemek_fiyati] = @original_yemek_fiyati AND (([yemek_icerigi] = @original_yemek_icerigi) OR ([yemek_icerigi] IS NULL AND @original_yemek_icerigi IS NULL))" InsertCommand="INSERT INTO [Yemek_menü] ([yemek_adi], [yemek_fiyati], [yemek_icerigi]) VALUES (@yemek_adi, @yemek_fiyati, @yemek_icerigi)" OldValuesParameterFormatString="original_{0}" SelectCommand="SELECT [yemek_id], [yemek_adi], [yemek_fiyati], [yemek_icerigi] FROM [Yemek_menü]" UpdateCommand="UPDATE [Yemek_menü] SET [yemek_adi] = @yemek_adi, [yemek_fiyati] = @yemek_fiyati, [yemek_icerigi] = @yemek_icerigi WHERE [yemek_id] = @original_yemek_id AND [yemek_adi] = @original_yemek_adi AND [yemek_fiyati] = @original_yemek_fiyati AND (([yemek_icerigi] = @original_yemek_icerigi) OR ([yemek_icerigi] IS NULL AND @original_yemek_icerigi IS NULL))">
+            <asp:SqlDataSource ID="Yemek_Id_yemek_tur_sql" runat="server" ConnectionString="<%$ ConnectionStrings:Ozak_ErciyasConnectionString2 %>" SelectCommand="SELECT [yemek_id], [yemek_turu_id] FROM [Yemek_kategori]"></asp:SqlDataSource>
+            <asp:SqlDataSource ID="Menu_sql" runat="server" ConflictDetection="CompareAllValues" ConnectionString="<%$ ConnectionStrings:Ozak_ErciyasConnectionString2 %>" DeleteCommand="DELETE FROM [Yemek_menü] WHERE [yemek_id] = @original_yemek_id AND [yemek_adi] = @original_yemek_adi AND [yemek_fiyati] = @original_yemek_fiyati AND (([yemek_icerigi] = @original_yemek_icerigi) OR ([yemek_icerigi] IS NULL AND @original_yemek_icerigi IS NULL))" InsertCommand="INSERT INTO [Yemek_menü] ([yemek_adi], [yemek_fiyati], [yemek_icerigi]) VALUES (@yemek_adi, @yemek_fiyati, @yemek_icerigi)" OldValuesParameterFormatString="original_{0}" SelectCommand="SELECT [yemek_id], [yemek_adi], [yemek_fiyati], [yemek_icerigi] FROM [Yemek_menü]" UpdateCommand="UPDATE [Yemek_menü] SET [yemek_adi] = @yemek_adi, [yemek_fiyati] = @yemek_fiyati, [yemek_icerigi] = @yemek_icerigi WHERE [yemek_id] = @original_yemek_id AND [yemek_adi] = @original_yemek_adi AND [yemek_fiyati] = @original_yemek_fiyati AND (([yemek_icerigi] = @original_yemek_icerigi) OR ([yemek_icerigi] IS NULL AND @original_yemek_icerigi IS NULL))">
                 <DeleteParameters>
                     <asp:Parameter Name="original_yemek_id" Type="Int32" />
                     <asp:Parameter Name="original_yemek_adi" Type="String" />
@@ -532,7 +531,7 @@
                     <asp:Parameter Name="original_yemek_icerigi" Type="String" />
                 </UpdateParameters>
             </asp:SqlDataSource>
-            <asp:SqlDataSource ID="Yemek_turleri_sql" runat="server" ConflictDetection="CompareAllValues" ConnectionString="<%$ ConnectionStrings:Ozak_ErciyasConnectionString %>" DeleteCommand="DELETE FROM [Yemek_turleri] WHERE [yemek_turu_id] = @original_yemek_turu_id AND [yemek_turleri] = @original_yemek_turleri" InsertCommand="INSERT INTO [Yemek_turleri] ([yemek_turleri]) VALUES (@yemek_turleri)" OldValuesParameterFormatString="original_{0}" SelectCommand="SELECT [yemek_turu_id], [yemek_turleri] FROM [Yemek_turleri]" UpdateCommand="UPDATE [Yemek_turleri] SET [yemek_turleri] = @yemek_turleri WHERE [yemek_turu_id] = @original_yemek_turu_id AND [yemek_turleri] = @original_yemek_turleri">
+            <asp:SqlDataSource ID="Yemek_turleri_sql" runat="server" ConflictDetection="CompareAllValues" ConnectionString="<%$ ConnectionStrings:Ozak_ErciyasConnectionString2 %>" DeleteCommand="DELETE FROM [Yemek_turleri] WHERE [yemek_turu_id] = @original_yemek_turu_id AND [yemek_turleri] = @original_yemek_turleri" InsertCommand="INSERT INTO [Yemek_turleri] ([yemek_turleri]) VALUES (@yemek_turleri)" OldValuesParameterFormatString="original_{0}" SelectCommand="SELECT [yemek_turu_id], [yemek_turleri] FROM [Yemek_turleri]" UpdateCommand="UPDATE [Yemek_turleri] SET [yemek_turleri] = @yemek_turleri WHERE [yemek_turu_id] = @original_yemek_turu_id AND [yemek_turleri] = @original_yemek_turleri">
                 <DeleteParameters>
                     <asp:Parameter Name="original_yemek_turu_id" Type="Int32" />
                     <asp:Parameter Name="original_yemek_turleri" Type="String" />
@@ -546,7 +545,7 @@
                     <asp:Parameter Name="original_yemek_turleri" Type="String" />
                 </UpdateParameters>
             </asp:SqlDataSource>
-            <asp:SqlDataSource ID="Eski_sip_sql" runat="server" ConflictDetection="CompareAllValues" ConnectionString="<%$ ConnectionStrings:Ozak_ErciyasConnectionString %>" DeleteCommand="DELETE FROM [Gecmis_siparisler] WHERE [eski_siparis_id] = @original_eski_siparis_id AND [kullanici_id] = @original_kullanici_id AND [yemek_id] = @original_yemek_id" InsertCommand="INSERT INTO [Gecmis_siparisler] ([kullanici_id], [yemek_id]) VALUES (@kullanici_id, @yemek_id)" OldValuesParameterFormatString="original_{0}" SelectCommand="SELECT [eski_siparis_id], [kullanici_id], [yemek_id] FROM [Gecmis_siparisler]" UpdateCommand="UPDATE [Gecmis_siparisler] SET [kullanici_id] = @kullanici_id, [yemek_id] = @yemek_id WHERE [eski_siparis_id] = @original_eski_siparis_id AND [kullanici_id] = @original_kullanici_id AND [yemek_id] = @original_yemek_id">
+            <asp:SqlDataSource ID="Eski_sip_sql" runat="server" ConflictDetection="CompareAllValues" ConnectionString="<%$ ConnectionStrings:Ozak_ErciyasConnectionString2 %>" DeleteCommand="DELETE FROM [Gecmis_siparisler] WHERE [eski_siparis_id] = @original_eski_siparis_id AND [kullanici_id] = @original_kullanici_id AND [yemek_id] = @original_yemek_id" InsertCommand="INSERT INTO [Gecmis_siparisler] ([kullanici_id], [yemek_id]) VALUES (@kullanici_id, @yemek_id)" OldValuesParameterFormatString="original_{0}" SelectCommand="SELECT [eski_siparis_id], [kullanici_id], [yemek_id] FROM [Gecmis_siparisler]" UpdateCommand="UPDATE [Gecmis_siparisler] SET [kullanici_id] = @kullanici_id, [yemek_id] = @yemek_id WHERE [eski_siparis_id] = @original_eski_siparis_id AND [kullanici_id] = @original_kullanici_id AND [yemek_id] = @original_yemek_id">
                 <DeleteParameters>
                     <asp:Parameter Name="original_eski_siparis_id" Type="Int32" />
                     <asp:Parameter Name="original_kullanici_id" Type="Int32" />
@@ -564,7 +563,7 @@
                     <asp:Parameter Name="original_yemek_id" Type="Int32" />
                 </UpdateParameters>
             </asp:SqlDataSource>
-            <asp:SqlDataSource ID="Sepet_sql" runat="server" ConflictDetection="CompareAllValues" ConnectionString="<%$ ConnectionStrings:Ozak_ErciyasConnectionString %>" DeleteCommand="DELETE FROM [Sepet_tablosu] WHERE [yeni_siparis_id] = @original_yeni_siparis_id AND [yemek_id] = @original_yemek_id AND [kullanıcı_id] = @original_kullanıcı_id" InsertCommand="INSERT INTO [Sepet_tablosu] ([yemek_id], [kullanıcı_id]) VALUES (@yemek_id, @kullanıcı_id)" OldValuesParameterFormatString="original_{0}" SelectCommand="SELECT [yeni_siparis_id], [yemek_id], [kullanıcı_id] FROM [Sepet_tablosu]" UpdateCommand="UPDATE [Sepet_tablosu] SET [yemek_id] = @yemek_id, [kullanıcı_id] = @kullanıcı_id WHERE [yeni_siparis_id] = @original_yeni_siparis_id AND [yemek_id] = @original_yemek_id AND [kullanıcı_id] = @original_kullanıcı_id">
+            <asp:SqlDataSource ID="Sepet_sql" runat="server" ConflictDetection="CompareAllValues" ConnectionString="<%$ ConnectionStrings:Ozak_ErciyasConnectionString2 %>" DeleteCommand="DELETE FROM [Sepet_tablosu] WHERE [yeni_siparis_id] = @original_yeni_siparis_id AND [yemek_id] = @original_yemek_id AND [kullanıcı_id] = @original_kullanıcı_id" InsertCommand="INSERT INTO [Sepet_tablosu] ([yemek_id], [kullanıcı_id]) VALUES (@yemek_id, @kullanıcı_id)" OldValuesParameterFormatString="original_{0}" SelectCommand="SELECT [yeni_siparis_id], [yemek_id], [kullanıcı_id] FROM [Sepet_tablosu]" UpdateCommand="UPDATE [Sepet_tablosu] SET [yemek_id] = @yemek_id, [kullanıcı_id] = @kullanıcı_id WHERE [yeni_siparis_id] = @original_yeni_siparis_id AND [yemek_id] = @original_yemek_id AND [kullanıcı_id] = @original_kullanıcı_id">
                 <DeleteParameters>
                     <asp:Parameter Name="original_yeni_siparis_id" Type="Int32" />
                     <asp:Parameter Name="original_yemek_id" Type="Int32" />
@@ -582,7 +581,7 @@
                     <asp:Parameter Name="original_kullanıcı_id" Type="Int32" />
                 </UpdateParameters>
             </asp:SqlDataSource>
-            <asp:SqlDataSource ID="Kul_bil_sql" runat="server" ConnectionString="<%$ ConnectionStrings:Ozak_ErciyasConnectionString %>" DeleteCommand="DELETE FROM [Kullanici_bilgi_tablosu] WHERE [kullanici_id] = @original_kullanici_id" InsertCommand="INSERT INTO [Kullanici_bilgi_tablosu] ([kullanici_adi], [kullanici_soyadi], [kullanici_telefon]) VALUES (@kullanici_adi, @kullanici_soyadi, @kullanici_telefon)" OldValuesParameterFormatString="original_{0}" SelectCommand="SELECT * FROM [Kullanici_bilgi_tablosu]" UpdateCommand="UPDATE [Kullanici_bilgi_tablosu] SET [kullanici_adi] = @kullanici_adi, [kullanici_soyadi] = @kullanici_soyadi, [kullanici_telefon] = @kullanici_telefon WHERE [kullanici_id] = @original_kullanici_id">
+            <asp:SqlDataSource ID="Kul_bil_sql" runat="server" ConnectionString="<%$ ConnectionStrings:Ozak_ErciyasConnectionString2 %>" DeleteCommand="DELETE FROM [Kullanici_bilgi_tablosu] WHERE [kullanici_id] = @original_kullanici_id" InsertCommand="INSERT INTO [Kullanici_bilgi_tablosu] ([kullanici_adi], [kullanici_soyadi], [kullanici_telefon]) VALUES (@kullanici_adi, @kullanici_soyadi, @kullanici_telefon)" OldValuesParameterFormatString="original_{0}" SelectCommand="SELECT * FROM [Kullanici_bilgi_tablosu]" UpdateCommand="UPDATE [Kullanici_bilgi_tablosu] SET [kullanici_adi] = @kullanici_adi, [kullanici_soyadi] = @kullanici_soyadi, [kullanici_telefon] = @kullanici_telefon WHERE [kullanici_id] = @original_kullanici_id">
                 <DeleteParameters>
                     <asp:Parameter Name="original_kullanici_id" Type="Int32" />
                 </DeleteParameters>
@@ -604,7 +603,7 @@
 
                         </td>
                         <td>
-                            <asp:SqlDataSource ID="Kul_bil_form_sql" runat="server" ConflictDetection="CompareAllValues" ConnectionString="<%$ ConnectionStrings:Ozak_ErciyasConnectionString %>" DeleteCommand="DELETE FROM [Kullanici_bilgi_tablosu] WHERE [kullanici_id] = @original_kullanici_id AND [kullanici_adi] = @original_kullanici_adi AND [kullanici_soyadi] = @original_kullanici_soyadi AND [kullanici_telefon] = @original_kullanici_telefon" InsertCommand="INSERT INTO [Kullanici_bilgi_tablosu] ([kullanici_adi], [kullanici_soyadi], [kullanici_telefon]) VALUES (@kullanici_adi, @kullanici_soyadi, @kullanici_telefon)" OldValuesParameterFormatString="original_{0}" SelectCommand="SELECT * FROM [Kullanici_bilgi_tablosu] WHERE ([kullanici_id] = @kullanici_id)" UpdateCommand="UPDATE [Kullanici_bilgi_tablosu] SET [kullanici_adi] = @kullanici_adi, [kullanici_soyadi] = @kullanici_soyadi, [kullanici_telefon] = @kullanici_telefon WHERE [kullanici_id] = @original_kullanici_id AND [kullanici_adi] = @original_kullanici_adi AND [kullanici_soyadi] = @original_kullanici_soyadi AND [kullanici_telefon] = @original_kullanici_telefon">
+                            <asp:SqlDataSource ID="Kul_bil_form_sql" runat="server" ConflictDetection="CompareAllValues" ConnectionString="<%$ ConnectionStrings:Ozak_ErciyasConnectionString2 %>" DeleteCommand="DELETE FROM [Kullanici_bilgi_tablosu] WHERE [kullanici_id] = @original_kullanici_id AND [kullanici_adi] = @original_kullanici_adi AND [kullanici_soyadi] = @original_kullanici_soyadi AND [kullanici_telefon] = @original_kullanici_telefon" InsertCommand="INSERT INTO [Kullanici_bilgi_tablosu] ([kullanici_adi], [kullanici_soyadi], [kullanici_telefon]) VALUES (@kullanici_adi, @kullanici_soyadi, @kullanici_telefon)" OldValuesParameterFormatString="original_{0}" SelectCommand="SELECT * FROM [Kullanici_bilgi_tablosu] WHERE ([kullanici_id] = @kullanici_id)" UpdateCommand="UPDATE [Kullanici_bilgi_tablosu] SET [kullanici_adi] = @kullanici_adi, [kullanici_soyadi] = @kullanici_soyadi, [kullanici_telefon] = @kullanici_telefon WHERE [kullanici_id] = @original_kullanici_id AND [kullanici_adi] = @original_kullanici_adi AND [kullanici_soyadi] = @original_kullanici_soyadi AND [kullanici_telefon] = @original_kullanici_telefon">
                                 <DeleteParameters>
                                     <asp:Parameter Name="original_kullanici_id" Type="Int32" />
                                     <asp:Parameter Name="original_kullanici_adi" Type="String" />
