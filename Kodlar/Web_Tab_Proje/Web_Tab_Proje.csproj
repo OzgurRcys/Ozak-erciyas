@@ -84,6 +84,10 @@
     <Content Include="css\bootstrap.rtl.css" />
     <Content Include="css\bootstrap.rtl.min.css" />
     <Content Include="css\background.css" />
+    <Content Include="css\mdb.dark.min.css" />
+    <Content Include="css\mdb.dark.rtl.min.css" />
+    <Content Include="css\mdb.min.css" />
+    <Content Include="css\mdb.rtl.min.css" />
     <Content Include="iletisim.aspx" />
     <Content Include="js\bootstrap.bundle.js" />
     <Content Include="js\bootstrap.bundle.min.js" />
@@ -91,6 +95,7 @@
     <Content Include="js\bootstrap.esm.min.js" />
     <Content Include="js\bootstrap.js" />
     <Content Include="js\bootstrap.min.js" />
+    <Content Include="js\mdb.min.js" />
     <Content Include="Resimler\arkaplan.png" />
     <Content Include="Resimler\arkaplan_1920x1080.png" />
     <Content Include="Resimler\arkaplan_3840x2160.png" />
@@ -218,6 +223,11 @@
     <Content Include="js\bootstrap.esm.min.js.map" />
     <Content Include="js\bootstrap.js.map" />
     <Content Include="js\bootstrap.min.js.map" />
+    <Content Include="css\mdb.dark.min.css.map" />
+    <Content Include="css\mdb.dark.rtl.min.css.map" />
+    <Content Include="css\mdb.min.css.map" />
+    <Content Include="css\mdb.rtl.min.css.map" />
+    <Content Include="js\mdb.min.js.map" />
     <None Include="packages.config" />
     <Content Include="Site1.Master" />
     <Content Include="Resimler\3014609.png" />
