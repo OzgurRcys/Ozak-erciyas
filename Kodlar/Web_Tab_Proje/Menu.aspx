@@ -139,31 +139,31 @@
         <h5 class="card-title">
             <asp:SqlDataSource ID="SqlDataSource7" runat="server" ConnectionString="<%$ ConnectionStrings:Ozak_ErciyasConnectionString2 %>" SelectCommand="SELECT [yemek_adi] FROM [Yemek_menü] WHERE ([yemek_id] = @yemek_id)">
                 <SelectParameters>
-                    <asp:ControlParameter ControlID="tarhana_id" Name="yemek_id" PropertyName="Text" Type="Int32" />
+                    <asp:ControlParameter ControlID="Mercimek_ID" Name="yemek_id" PropertyName="Text" Type="Int32" />
                 </SelectParameters>
             </asp:SqlDataSource>
-            <asp:DetailsView ID="DetailsView7" runat="server" AutoGenerateRows="False" BorderStyle="None" DataSourceID="SqlDataSource1" Height="16px" Width="168px" BackColor="White">
+            <asp:DetailsView ID="DetailsView7" runat="server" AutoGenerateRows="False" BorderStyle="None" DataSourceID="SqlDataSource7" Height="16px" Width="168px" BackColor="White">
                 <Fields>
                     <asp:BoundField DataField="yemek_adi" SortExpression="yemek_adi" />
                 </Fields>
             </asp:DetailsView>
-            <asp:Label ID="Label2" runat="server" Text="1" Visible="False"></asp:Label>
+            <asp:Label ID="Mercimek_ID" runat="server" Text="3" Visible="False"></asp:Label>
             <asp:SqlDataSource ID="SqlDataSource8" runat="server" ConnectionString="<%$ ConnectionStrings:Ozak_ErciyasConnectionString2 %>" SelectCommand="SELECT [yemek_icerigi] FROM [Yemek_menü] WHERE ([yemek_id] = @yemek_id)">
                 <SelectParameters>
-                    <asp:ControlParameter ControlID="tarhana_id" Name="yemek_id" PropertyName="Text" Type="Int32" />
+                    <asp:ControlParameter ControlID="Mercimek_ID" Name="yemek_id" PropertyName="Text" Type="Int32" />
                 </SelectParameters>
             </asp:SqlDataSource>
-            <asp:DetailsView ID="DetailsView8" runat="server" AutoGenerateRows="False" BorderStyle="None" DataSourceID="SqlDataSource2" Height="16px" Width="168px" BackColor="White">
+            <asp:DetailsView ID="DetailsView8" runat="server" AutoGenerateRows="False" BorderStyle="None" DataSourceID="SqlDataSource8" Height="16px" Width="168px" BackColor="White">
                 <Fields>
                     <asp:BoundField DataField="yemek_icerigi" SortExpression="yemek_icerigi" />
                 </Fields>
             </asp:DetailsView>
             <asp:SqlDataSource ID="SqlDataSource9" runat="server" ConnectionString="<%$ ConnectionStrings:Ozak_ErciyasConnectionString2 %>" SelectCommand="SELECT [yemek_fiyati] FROM [Yemek_menü] WHERE ([yemek_id] = @yemek_id)">
                 <SelectParameters>
-                    <asp:ControlParameter ControlID="tarhana_id" Name="yemek_id" PropertyName="Text" Type="Int32" />
+                    <asp:ControlParameter ControlID="Mercimek_ID" Name="yemek_id" PropertyName="Text" Type="Int32" />
                 </SelectParameters>
             </asp:SqlDataSource>
-            <asp:DetailsView ID="DetailsView9" runat="server" AutoGenerateRows="False" BorderStyle="None" DataSourceID="SqlDataSource3" Height="16px" Width="168px" BackColor="White">
+            <asp:DetailsView ID="DetailsView9" runat="server" AutoGenerateRows="False" BorderStyle="None" DataSourceID="SqlDataSource9" Height="16px" Width="168px" BackColor="White">
                 <Fields>
                     <asp:BoundField DataField="yemek_fiyati" SortExpression="yemek_fiyati" />
                 </Fields>
@@ -175,31 +175,31 @@
   <h5 class="card-title">
             <asp:SqlDataSource ID="SqlDataSource10" runat="server" ConnectionString="<%$ ConnectionStrings:Ozak_ErciyasConnectionString2 %>" SelectCommand="SELECT [yemek_adi] FROM [Yemek_menü] WHERE ([yemek_id] = @yemek_id)">
                 <SelectParameters>
-                    <asp:ControlParameter ControlID="tarhana_id" Name="yemek_id" PropertyName="Text" Type="Int32" />
+                    <asp:ControlParameter ControlID="TasKebab" Name="yemek_id" PropertyName="Text" Type="Int32" />
                 </SelectParameters>
             </asp:SqlDataSource>
-            <asp:DetailsView ID="DetailsView10" runat="server" AutoGenerateRows="False" BorderStyle="None" DataSourceID="SqlDataSource1" Height="16px" Width="168px" BackColor="White">
+            <asp:DetailsView ID="DetailsView10" runat="server" AutoGenerateRows="False" BorderStyle="None" DataSourceID="SqlDataSource10" Height="16px" Width="168px" BackColor="White">
                 <Fields>
                     <asp:BoundField DataField="yemek_adi" SortExpression="yemek_adi" />
                 </Fields>
             </asp:DetailsView>
-            <asp:Label ID="Label3" runat="server" Text="1" Visible="False"></asp:Label>
+            <asp:Label ID="TasKebab" runat="server" Text="4" Visible="False"></asp:Label>
             <asp:SqlDataSource ID="SqlDataSource11" runat="server" ConnectionString="<%$ ConnectionStrings:Ozak_ErciyasConnectionString2 %>" SelectCommand="SELECT [yemek_icerigi] FROM [Yemek_menü] WHERE ([yemek_id] = @yemek_id)">
                 <SelectParameters>
-                    <asp:ControlParameter ControlID="tarhana_id" Name="yemek_id" PropertyName="Text" Type="Int32" />
+                    <asp:ControlParameter ControlID="TasKebab" Name="yemek_id" PropertyName="Text" Type="Int32" />
                 </SelectParameters>
             </asp:SqlDataSource>
-            <asp:DetailsView ID="DetailsView11" runat="server" AutoGenerateRows="False" BorderStyle="None" DataSourceID="SqlDataSource2" Height="16px" Width="168px" BackColor="White">
+            <asp:DetailsView ID="DetailsView11" runat="server" AutoGenerateRows="False" BorderStyle="None" DataSourceID="SqlDataSource11" Height="16px" Width="168px" BackColor="White">
                 <Fields>
                     <asp:BoundField DataField="yemek_icerigi" SortExpression="yemek_icerigi" />
                 </Fields>
             </asp:DetailsView>
             <asp:SqlDataSource ID="SqlDataSource12" runat="server" ConnectionString="<%$ ConnectionStrings:Ozak_ErciyasConnectionString2 %>" SelectCommand="SELECT [yemek_fiyati] FROM [Yemek_menü] WHERE ([yemek_id] = @yemek_id)">
                 <SelectParameters>
-                    <asp:ControlParameter ControlID="tarhana_id" Name="yemek_id" PropertyName="Text" Type="Int32" />
+                    <asp:ControlParameter ControlID="TasKebab" Name="yemek_id" PropertyName="Text" Type="Int32" />
                 </SelectParameters>
             </asp:SqlDataSource>
-            <asp:DetailsView ID="DetailsView12" runat="server" AutoGenerateRows="False" BorderStyle="None" DataSourceID="SqlDataSource3" Height="16px" Width="168px" BackColor="White">
+            <asp:DetailsView ID="DetailsView12" runat="server" AutoGenerateRows="False" BorderStyle="None" DataSourceID="SqlDataSource12" Height="16px" Width="168px" BackColor="White">
                 <Fields>
                     <asp:BoundField DataField="yemek_fiyati" SortExpression="yemek_fiyati" />
                 </Fields>

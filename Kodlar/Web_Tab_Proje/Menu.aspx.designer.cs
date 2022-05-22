@@ -159,13 +159,13 @@ namespace Web_Tab_Proje
         protected global::System.Web.UI.WebControls.DetailsView DetailsView7;
 
         /// <summary>
-        /// Label2 control.
+        /// Mercimek_ID control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label Label2;
+        protected global::System.Web.UI.WebControls.Label Mercimek_ID;
 
         /// <summary>
         /// SqlDataSource8 control.
@@ -222,13 +222,13 @@ namespace Web_Tab_Proje
         protected global::System.Web.UI.WebControls.DetailsView DetailsView10;
 
         /// <summary>
-        /// Label3 control.
+        /// TasKebab control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label Label3;
+        protected global::System.Web.UI.WebControls.Label TasKebab;
 
         /// <summary>
         /// SqlDataSource11 control.
