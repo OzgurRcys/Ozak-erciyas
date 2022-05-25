@@ -54,8 +54,8 @@
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Dropdown</a>
                     <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="#">GİRİŞ YAP</a></li>
-                        <li><a class="dropdown-item" href="#">SEPETİM</a></li>
+                        <li><a class="dropdown-item" href="giris.aspx">GİRİŞ YAP</a></li>
+                        <li><a class="dropdown-item" href="sepet.aspx">SEPETİM</a></li>
                         <!--    <hr class="dropdown-divider"> drop down ayırma kısmı -->
 
                     </ul>
