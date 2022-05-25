@@ -365,7 +365,7 @@
             <asp:ControlParameter ControlID="musakka_id" Name="yemek_id" PropertyName="Text" Type="Int32" />
         </SelectParameters>
     </asp:SqlDataSource>
-    <asp:DetailsView ID="DetailsView23" runat="server" AutoGenerateRows="False" BorderStyle="None" DataSourceID="SqlDataSource23" Height="16px" Width="168px" BackColor="White">
+    <asp:DetailsView ID="DetailsView23" runat="server" AutoGenerateRows="False" BorderStyle="None" DataSourceID="SqlDataSource23" Height="16px" Width="246px" BackColor="White">
         <Fields>
             <asp:BoundField DataField="yemek_icerigi" SortExpression="yemek_icerigi" />
         </Fields>
