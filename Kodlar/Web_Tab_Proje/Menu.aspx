@@ -3,10 +3,11 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
     <style type="text/css">
         .auto-style3 {
-            width: 171px;
-            height: 79px;
-        margin-left: 0px;
-    }
+            width: 190px;
+            height: 80px;
+           
+            
+        }
 
         .auto-style15 {
             position: fixed;
@@ -23,6 +24,10 @@
              width: 57%;
             height: 250px;
             margin-left: 300px;
+        }
+        
+        .auto-style20 {
+            width: 330px;
         }
         
         </style>
@@ -81,7 +86,7 @@
             </asp:SqlDataSource>
         </h5>
                     <h5 class="card-title">
-            <asp:DetailsView ID="DetailsView2" runat="server" AutoGenerateRows="False" BorderStyle="None" DataSourceID="SqlDataSource2" Height="16px" Width="168px">
+            <asp:DetailsView ID="DetailsView2" runat="server" AutoGenerateRows="False" BorderStyle="None" DataSourceID="SqlDataSource2" Height="16px" Width="168px" BackColor="White">
                 <Fields>
                     <asp:BoundField DataField="yemek_icerigi" SortExpression="yemek_icerigi" />
                 </Fields>
@@ -91,6 +96,8 @@
                     <asp:ControlParameter ControlID="tarhana_id" Name="yemek_id" PropertyName="Text" Type="Int32" />
                 </SelectParameters>
             </asp:SqlDataSource>
+        </h5>
+                    <h5 class="card-title">
             <asp:DetailsView ID="DetailsView3" runat="server" AutoGenerateRows="False" BorderStyle="None" DataSourceID="SqlDataSource3" Height="16px" Width="168px" BackColor="White">
                 <Fields>
                     <asp:BoundField DataField="yemek_fiyati" SortExpression="yemek_fiyati" />
@@ -118,16 +125,19 @@
                 </Fields>
             </asp:DetailsView>
             <asp:Label ID="Ezo_ID" runat="server" Text="2" Visible="False" ForeColor="White"></asp:Label>
+            <asp:SqlDataSource ID="SqlDataSource5" runat="server" ConnectionString="<%$ ConnectionStrings:Ozak_ErciyasConnectionString2 %>" SelectCommand="SELECT [yemek_fiyati] FROM [Yemek_menü] WHERE ([yemek_id] = @yemek_id)">
+                <SelectParameters>
+                    <asp:ControlParameter ControlID="Ezo_ID" Name="yemek_id" PropertyName="Text" Type="Int32" />
+                </SelectParameters>
+            </asp:SqlDataSource>
         </h5>
                     <h5 class="card-title">
-            <asp:DetailsView ID="DetailsView6" runat="server" AutoGenerateRows="False" BorderStyle="None" DataSourceID="SqlDataSource6" Height="16px" Width="168px">
+            <asp:DetailsView ID="DetailsView6" runat="server" AutoGenerateRows="False" BorderStyle="None" DataSourceID="SqlDataSource6" Height="16px" Width="168px" BackColor="White">
                 <Fields>
                     <asp:BoundField DataField="yemek_icerigi" SortExpression="yemek_icerigi" />
                 </Fields>
             </asp:DetailsView>
-        </h5>
-                    <h5 class="card-title">
-            <asp:SqlDataSource ID="SqlDataSource5" runat="server" ConnectionString="<%$ ConnectionStrings:Ozak_ErciyasConnectionString2 %>" SelectCommand="SELECT [yemek_fiyati] FROM [Yemek_menü] WHERE ([yemek_id] = @yemek_id)">
+            <asp:SqlDataSource ID="SqlDataSource6" runat="server" ConnectionString="<%$ ConnectionStrings:Ozak_ErciyasConnectionString2 %>" SelectCommand="SELECT [yemek_icerigi] FROM [Yemek_menü] WHERE ([yemek_id] = @yemek_id)">
                 <SelectParameters>
                     <asp:ControlParameter ControlID="Ezo_ID" Name="yemek_id" PropertyName="Text" Type="Int32" />
                 </SelectParameters>
@@ -139,14 +149,9 @@
                     <asp:BoundField DataField="yemek_fiyati" SortExpression="yemek_fiyati" />
                 </Fields>
             </asp:DetailsView>
-            <asp:SqlDataSource ID="SqlDataSource6" runat="server" ConnectionString="<%$ ConnectionStrings:Ozak_ErciyasConnectionString2 %>" SelectCommand="SELECT [yemek_icerigi] FROM [Yemek_menü] WHERE ([yemek_id] = @yemek_id)">
-                <SelectParameters>
-                    <asp:ControlParameter ControlID="Ezo_ID" Name="yemek_id" PropertyName="Text" Type="Int32" />
-                </SelectParameters>
-            </asp:SqlDataSource>
         </h5>
         <a href="#" class="btn btn-primary">Go somewhere</a></td>
-                <td>&nbsp;<img src="Resimler/yemekler/mercimek_corbasi.jpg" class="auto-style3" alt="mercimek_corbasi" align="center">
+                <td><img src="Resimler/yemekler/mercimek_corbasi.jpg" class="auto-style3" alt="mercimek_corbasi" align="center">
        
         <h5 class="card-title">
             <asp:SqlDataSource ID="SqlDataSource7" runat="server" ConnectionString="<%$ ConnectionStrings:Ozak_ErciyasConnectionString2 %>" SelectCommand="SELECT [yemek_adi] FROM [Yemek_menü] WHERE ([yemek_id] = @yemek_id)">
@@ -169,7 +174,7 @@
             </asp:SqlDataSource>
         </h5>
                     <h5 class="card-title">
-            <asp:DetailsView ID="DetailsView8" runat="server" AutoGenerateRows="False" BorderStyle="None" DataSourceID="SqlDataSource8" Height="16px" Width="168px">
+            <asp:DetailsView ID="DetailsView8" runat="server" AutoGenerateRows="False" BorderStyle="None" DataSourceID="SqlDataSource8" Height="16px" Width="168px" BackColor="White">
                 <Fields>
                     <asp:BoundField DataField="yemek_icerigi" SortExpression="yemek_icerigi" />
                 </Fields>
@@ -249,7 +254,7 @@
                     <asp:ControlParameter ControlID="izmir_id" Name="yemek_id" PropertyName="Text" Type="Int32" />
                 </SelectParameters>
             </asp:SqlDataSource>
-            <asp:DetailsView ID="DetailsView14" runat="server" AutoGenerateRows="False" BorderStyle="None" DataSourceID="SqlDataSource2" Height="16px" Width="168px">
+            <asp:DetailsView ID="DetailsView14" runat="server" AutoGenerateRows="False" BorderStyle="None" DataSourceID="SqlDataSource2" Height="16px" Width="168px" BackColor="White">
                 <Fields>
                     <asp:BoundField DataField="yemek_icerigi" SortExpression="yemek_icerigi" />
                 </Fields>
@@ -266,7 +271,7 @@
             </asp:DetailsView>
         </h5>
         <a href="#" class="btn btn-primary">Go somewhere</a></td>
-                <td>  <img src="Resimler/yemekler/tavuk_sote.jpg" class="auto-style3" alt="tavuk_sote" align="center">&nbsp;&nbsp;
+                <td>&nbsp;<img src="Resimler/yemekler/tavuk_sote.jpg" class="auto-style3" alt="tavuk_sote" align="center">
 <h5 class="card-title">
             <asp:SqlDataSource ID="SqlDataSource16" runat="server" ConnectionString="<%$ ConnectionStrings:Ozak_ErciyasConnectionString2 %>" SelectCommand="SELECT [yemek_adi] FROM [Yemek_menü] WHERE ([yemek_id] = @yemek_id)">
                 <SelectParameters>
@@ -307,7 +312,7 @@
         <br /> <h1 style="color:white"><a name="SebzeliYemek">Sebzeli Yemekler</a></h1>
         <table class="auto-style19">
             <tr>
-                <td>
+                <td class="auto-style20">
    
         <img src="Resimler/yemekler/ispanak.jpg" class="auto-style3" alt="ispanak" align="center">
 <h5 class="card-title">
@@ -327,7 +332,7 @@
             <asp:ControlParameter ControlID="ispanak_id" Name="yemek_id" PropertyName="Text" Type="Int32" />
         </SelectParameters>
     </asp:SqlDataSource>
-    <asp:DetailsView ID="DetailsView20" runat="server" AutoGenerateRows="False" BorderStyle="None" DataSourceID="SqlDataSource20" Height="16px" Width="168px">
+    <asp:DetailsView ID="DetailsView20" runat="server" AutoGenerateRows="False" BorderStyle="None" DataSourceID="SqlDataSource20" Height="16px" Width="168px" BackColor="White">
         <Fields>
             <asp:BoundField DataField="yemek_icerigi" SortExpression="yemek_icerigi" />
         </Fields>
@@ -520,7 +525,7 @@
             <asp:ControlParameter ControlID="bulgur_id" Name="yemek_id" PropertyName="Text" Type="Int32" />
         </SelectParameters>
     </asp:SqlDataSource>
-    <asp:DetailsView ID="DetailsView32" runat="server" AutoGenerateRows="False" BorderStyle="None" DataSourceID="SqlDataSource32" Height="16px" Width="168px">
+    <asp:DetailsView ID="DetailsView32" runat="server" AutoGenerateRows="False" BorderStyle="None" DataSourceID="SqlDataSource32" Height="16px" Width="168px" BackColor="White">
         <Fields>
             <asp:BoundField DataField="yemek_icerigi" SortExpression="yemek_icerigi" />
         </Fields>
@@ -556,7 +561,7 @@
             <asp:ControlParameter ControlID="pirinc_id" Name="yemek_id" PropertyName="Text" Type="Int32" />
         </SelectParameters>
     </asp:SqlDataSource>
-    <asp:DetailsView ID="DetailsView35" runat="server" AutoGenerateRows="False" BorderStyle="None" DataSourceID="SqlDataSource35" Height="16px" Width="168px">
+    <asp:DetailsView ID="DetailsView35" runat="server" AutoGenerateRows="False" BorderStyle="None" DataSourceID="SqlDataSource35" Height="16px" Width="168px" BackColor="White">
         <Fields>
             <asp:BoundField DataField="yemek_icerigi" SortExpression="yemek_icerigi" />
         </Fields>
@@ -712,7 +717,7 @@
             <asp:ControlParameter ControlID="sogukbaklava_id" Name="yemek_id" PropertyName="Text" Type="Int32" />
         </SelectParameters>
     </asp:SqlDataSource>
-    <asp:DetailsView ID="DetailsView50" runat="server" AutoGenerateRows="False" BorderStyle="None" DataSourceID="SqlDataSource50" Height="16px" Width="168px">
+    <asp:DetailsView ID="DetailsView50" runat="server" AutoGenerateRows="False" BorderStyle="None" DataSourceID="SqlDataSource50" Height="16px" Width="168px" BackColor="White">
         <Fields>
             <asp:BoundField DataField="yemek_icerigi" SortExpression="yemek_icerigi" />
         </Fields>
@@ -782,7 +787,7 @@
             <asp:ControlParameter ControlID="sutlac_id" Name="yemek_id" PropertyName="Text" Type="Int32" />
         </SelectParameters>
     </asp:SqlDataSource>
-    <asp:DetailsView ID="DetailsView56" runat="server" AutoGenerateRows="False" BorderStyle="None" DataSourceID="SqlDataSource56" Height="16px" Width="168px">
+    <asp:DetailsView ID="DetailsView56" runat="server" AutoGenerateRows="False" BorderStyle="None" DataSourceID="SqlDataSource56" Height="16px" Width="168px" BackColor="White">
         <Fields>
             <asp:BoundField DataField="yemek_icerigi" SortExpression="yemek_icerigi" />
         </Fields>
@@ -819,7 +824,7 @@
             <asp:ControlParameter ControlID="trilece_id" Name="yemek_id" PropertyName="Text" Type="Int32" />
         </SelectParameters>
     </asp:SqlDataSource>
-    <asp:DetailsView ID="DetailsView59" runat="server" AutoGenerateRows="False" BorderStyle="None" DataSourceID="SqlDataSource59" Height="16px" Width="168px">
+    <asp:DetailsView ID="DetailsView59" runat="server" AutoGenerateRows="False" BorderStyle="None" DataSourceID="SqlDataSource59" Height="16px" Width="168px" BackColor="White">
         <Fields>
             <asp:BoundField DataField="yemek_icerigi" SortExpression="yemek_icerigi" />
         </Fields>
@@ -889,7 +894,7 @@
             <asp:ControlParameter ControlID="profiterol_id" Name="yemek_id" PropertyName="Text" Type="Int32" />
         </SelectParameters>
     </asp:SqlDataSource>
-    <asp:DetailsView ID="DetailsView65" runat="server" AutoGenerateRows="False" BorderStyle="None" DataSourceID="SqlDataSource65" Height="16px" Width="168px">
+    <asp:DetailsView ID="DetailsView65" runat="server" AutoGenerateRows="False" BorderStyle="None" DataSourceID="SqlDataSource65" Height="16px" Width="168px" BackColor="White">
         <Fields>
             <asp:BoundField DataField="yemek_icerigi" SortExpression="yemek_icerigi" />
         </Fields>
@@ -979,7 +984,7 @@
             <asp:ControlParameter ControlID="kola_id" Name="yemek_id" PropertyName="Text" Type="Int32" />
         </SelectParameters>
     </asp:SqlDataSource>
-    <asp:DetailsView ID="DetailsView98" runat="server" AutoGenerateRows="False" BorderStyle="None" DataSourceID="SqlDataSource98" Height="16px" Width="168px">
+    <asp:DetailsView ID="DetailsView98" runat="server" AutoGenerateRows="False" BorderStyle="None" DataSourceID="SqlDataSource98" Height="16px" Width="168px" BackColor="White">
         <Fields>
             <asp:BoundField DataField="yemek_icerigi" SortExpression="yemek_icerigi" />
         </Fields>
@@ -1014,7 +1019,7 @@
             <asp:ControlParameter ControlID="fanta_id" Name="yemek_id" PropertyName="Text" Type="Int32" />
         </SelectParameters>
     </asp:SqlDataSource>
-    <asp:DetailsView ID="DetailsView101" runat="server" AutoGenerateRows="False" BorderStyle="None" DataSourceID="SqlDataSource101" Height="16px" Width="168px">
+    <asp:DetailsView ID="DetailsView101" runat="server" AutoGenerateRows="False" BorderStyle="None" DataSourceID="SqlDataSource101" Height="16px" Width="168px" BackColor="White">
         <Fields>
             <asp:BoundField DataField="yemek_icerigi" SortExpression="yemek_icerigi" />
         </Fields>
@@ -1049,7 +1054,7 @@
             <asp:ControlParameter ControlID="sprite_id" Name="yemek_id" PropertyName="Text" Type="Int32" />
         </SelectParameters>
     </asp:SqlDataSource>
-    <asp:DetailsView ID="DetailsView104" runat="server" AutoGenerateRows="False" BorderStyle="None" DataSourceID="SqlDataSource104" Height="16px" Width="168px">
+    <asp:DetailsView ID="DetailsView104" runat="server" AutoGenerateRows="False" BorderStyle="None" DataSourceID="SqlDataSource104" Height="16px" Width="168px" BackColor="White">
         <Fields>
             <asp:BoundField DataField="yemek_icerigi" SortExpression="yemek_icerigi" />
         </Fields>
@@ -1086,7 +1091,7 @@
             <asp:ControlParameter ControlID="icetea_id" Name="yemek_id" PropertyName="Text" Type="Int32" />
         </SelectParameters>
     </asp:SqlDataSource>
-    <asp:DetailsView ID="DetailsView107" runat="server" AutoGenerateRows="False" BorderStyle="None" DataSourceID="SqlDataSource107" Height="16px" Width="168px">
+    <asp:DetailsView ID="DetailsView107" runat="server" AutoGenerateRows="False" BorderStyle="None" DataSourceID="SqlDataSource107" Height="16px" Width="168px" BackColor="White">
         <Fields>
             <asp:BoundField DataField="yemek_icerigi" SortExpression="yemek_icerigi" />
         </Fields>
@@ -1121,7 +1126,7 @@
             <asp:ControlParameter ControlID="soda_id" Name="yemek_id" PropertyName="Text" Type="Int32" />
         </SelectParameters>
     </asp:SqlDataSource>
-    <asp:DetailsView ID="DetailsView110" runat="server" AutoGenerateRows="False" BorderStyle="None" DataSourceID="SqlDataSource110" Height="16px" Width="168px">
+    <asp:DetailsView ID="DetailsView110" runat="server" AutoGenerateRows="False" BorderStyle="None" DataSourceID="SqlDataSource110" Height="16px" Width="168px" BackColor="White">
         <Fields>
             <asp:BoundField DataField="yemek_icerigi" SortExpression="yemek_icerigi" />
         </Fields>
@@ -1193,7 +1198,7 @@
             <asp:ControlParameter ControlID="ayran_id" Name="yemek_id" PropertyName="Text" Type="Int32" />
         </SelectParameters>
     </asp:SqlDataSource>
-    <asp:DetailsView ID="DetailsView116" runat="server" AutoGenerateRows="False" BorderStyle="None" DataSourceID="SqlDataSource116" Height="16px" Width="168px">
+    <asp:DetailsView ID="DetailsView116" runat="server" AutoGenerateRows="False" BorderStyle="None" DataSourceID="SqlDataSource116" Height="16px" Width="168px" BackColor="White">
         <Fields>
             <asp:BoundField DataField="yemek_icerigi" SortExpression="yemek_icerigi" />
         </Fields>
@@ -1214,7 +1219,7 @@
 <h5 class="card-title">
     <asp:SqlDataSource ID="SqlDataSource118" runat="server" ConnectionString="<%$ ConnectionStrings:Ozak_ErciyasConnectionString2 %>" SelectCommand="SELECT [yemek_adi] FROM [Yemek_menü] WHERE ([yemek_id] = @yemek_id)">
         <SelectParameters>
-            <asp:ControlParameter ControlID="Mercimek_ID" Name="yemek_id" PropertyName="Text" Type="Int32" />
+            <asp:ControlParameter ControlID="turkkahvesi_id" Name="yemek_id" PropertyName="Text" Type="Int32" />
         </SelectParameters>
     </asp:SqlDataSource>
     <asp:DetailsView ID="DetailsView118" runat="server" AutoGenerateRows="False" BorderStyle="None" DataSourceID="SqlDataSource118" Height="16px" Width="168px" BackColor="White">
@@ -1228,7 +1233,7 @@
             <asp:ControlParameter ControlID="turkkahvesi_id" Name="yemek_id" PropertyName="Text" Type="Int32" />
         </SelectParameters>
     </asp:SqlDataSource>
-    <asp:DetailsView ID="DetailsView119" runat="server" AutoGenerateRows="False" BorderStyle="None" DataSourceID="SqlDataSource119" Height="16px" Width="168px">
+    <asp:DetailsView ID="DetailsView119" runat="server" AutoGenerateRows="False" BorderStyle="None" DataSourceID="SqlDataSource119" Height="16px" Width="168px" BackColor="White">
         <Fields>
             <asp:BoundField DataField="yemek_icerigi" SortExpression="yemek_icerigi" />
         </Fields>
@@ -1263,7 +1268,7 @@
             <asp:ControlParameter ControlID="kahve_id" Name="yemek_id" PropertyName="Text" Type="Int32" />
         </SelectParameters>
     </asp:SqlDataSource>
-    <asp:DetailsView ID="DetailsView122" runat="server" AutoGenerateRows="False" BorderStyle="None" DataSourceID="SqlDataSource122" Height="16px" Width="168px" BackColor="White" BorderColor="White">
+    <asp:DetailsView ID="DetailsView122" runat="server" AutoGenerateRows="False" BorderStyle="None" DataSourceID="SqlDataSource122" Height="16px" Width="168px" BackColor="White">
         <Fields>
             <asp:BoundField DataField="yemek_icerigi" SortExpression="yemek_icerigi" />
         </Fields>
