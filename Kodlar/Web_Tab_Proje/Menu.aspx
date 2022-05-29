@@ -1217,7 +1217,7 @@
 <h5 class="card-title">
     <asp:SqlDataSource ID="SqlDataSource118" runat="server" ConnectionString="<%$ ConnectionStrings:Ozak_ErciyasConnectionString2 %>" SelectCommand="SELECT [yemek_adi] FROM [Yemek_menü] WHERE ([yemek_id] = @yemek_id)">
         <SelectParameters>
-            <asp:ControlParameter ControlID="Mercimek_ID" Name="yemek_id" PropertyName="Text" Type="Int32" />
+            <asp:ControlParameter ControlID="turkkahvesi_id" Name="yemek_id" PropertyName="Text" Type="Int32" />
         </SelectParameters>
     </asp:SqlDataSource>
     <asp:DetailsView ID="DetailsView118" runat="server" AutoGenerateRows="False" BorderStyle="None" DataSourceID="SqlDataSource118" Height="16px" Width="168px" BackColor="White">
