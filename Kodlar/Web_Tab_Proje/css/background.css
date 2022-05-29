@@ -4,14 +4,14 @@
     font: 100%/1.4 Verdana, Arial, Helvetica, sans-serif;
     margin: 0px;
     padding: 0px;
-    background-image: url('../Resimler/arkaplan_3840x2160.png');
+    background-image: url('../Resimler/Back-21.png');
     background-size: auto;
    /* width: fit-content;
     height: fit-content;*/
     background-repeat: repeat-y;
     background-attachment: scroll;
     background-position: center;
-    background-size: 1920px 1080px;
+    background-size: 1920px*1080px;
      
     .menu_resim_icerik
 {

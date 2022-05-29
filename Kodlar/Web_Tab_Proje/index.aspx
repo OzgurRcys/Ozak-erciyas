@@ -26,15 +26,9 @@
 
     <div class="container-fluid" margin="5px" align="center" padding="5px">
         <br />
-
-
-
-
-
-
         <br />
         <br />
-        <asp:Image ID="Image4" runat="server" Height="720px" ImageUrl="~/Resimler/kasibeyaz-bosphorus-subat-2020.png" Width="1080px" />
+        <asp:Image ID="Image4" runat="server" Height="337px" ImageUrl="~/Resimler/kasibeyaz-bosphorus-subat-2020.png" Width="706px" />
 
 
         <h1 style="color: aliceblue; text-align: center">HAKKIMIZDA
@@ -52,8 +46,8 @@ Bugün gelenekten, geleceğe felsefesiyle bayrağı devir alan MERT ustanın kı
         </p>
 
         <div margin="100px">
-            <asp:Image ID="Image1" runat="server" Height="244px" ImageUrl="~/Resimler/arkaplan.png" Width="421px" />
             <asp:Image ID="Image2" runat="server" Height="244px" ImageUrl="~/Resimler/3353887.png" Width="421px" />
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
             <asp:Image ID="Image3" runat="server" Height="244px" ImageUrl="~/Resimler/3014609.png" Width="421px" />
         </div>
 

@@ -46,8 +46,6 @@
 </head>
 <body>
     <form id="form1" runat="server">
-        <p>Raporlamaya Gitmek İçin  <a href="Raporlama.aspx"> Tıklayınız</a></p>
-
         <div class="auto-style1">
 
 
