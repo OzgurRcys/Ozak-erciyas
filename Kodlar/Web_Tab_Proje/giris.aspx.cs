@@ -13,5 +13,10 @@ namespace Web_Tab_Proje
         {
 
         }
+
+        protected void Button1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
