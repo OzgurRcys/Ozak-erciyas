@@ -24,33 +24,6 @@ namespace Web_Tab_Proje
         protected global::System.Web.UI.HtmlControls.HtmlForm form1;
 
         /// <summary>
-        /// Yemek_Turler control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.GridView Yemek_Turler;
-
-        /// <summary>
-        /// Yemek_id_yemek_tur_form control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.FormView Yemek_id_yemek_tur_form;
-
-        /// <summary>
-        /// Kul_Bilgileri control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.GridView Kul_Bilgileri;
-
-        /// <summary>
         /// Kul_bilgileri_form control.
         /// </summary>
         /// <remarks>
@@ -60,31 +33,31 @@ namespace Web_Tab_Proje
         protected global::System.Web.UI.WebControls.FormView Kul_bilgileri_form;
 
         /// <summary>
-        /// Yemek_Turleri_ve_Idleri control.
+        /// Giris_bilgileri_form control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.GridView Yemek_Turleri_ve_Idleri;
+        protected global::System.Web.UI.WebControls.FormView Giris_bilgileri_form;
 
         /// <summary>
-        /// yemek_turleri_form control.
+        /// Menu_bilgileri_form control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.FormView yemek_turleri_form;
+        protected global::System.Web.UI.WebControls.FormView Menu_bilgileri_form;
 
         /// <summary>
-        /// Eski_Siparisler control.
+        /// Sepet_form control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.GridView Eski_Siparisler;
+        protected global::System.Web.UI.WebControls.FormView Sepet_form;
 
         /// <summary>
         /// Eski_sip_form control.
@@ -96,22 +69,13 @@ namespace Web_Tab_Proje
         protected global::System.Web.UI.WebControls.FormView Eski_sip_form;
 
         /// <summary>
-        /// Menu control.
+        /// Kul_Bilgileri control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.GridView Menu;
-
-        /// <summary>
-        /// Menu_form control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.FormView Menu_form;
+        protected global::System.Web.UI.WebControls.GridView Kul_Bilgileri;
 
         /// <summary>
         /// Giris_bil control.
@@ -123,13 +87,13 @@ namespace Web_Tab_Proje
         protected global::System.Web.UI.WebControls.GridView Giris_bil;
 
         /// <summary>
-        /// Giris_bil_form control.
+        /// Eski_Siparisler control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.FormView Giris_bil_form;
+        protected global::System.Web.UI.WebControls.GridView Eski_Siparisler;
 
         /// <summary>
         /// Sepet_bil control.
@@ -141,13 +105,40 @@ namespace Web_Tab_Proje
         protected global::System.Web.UI.WebControls.GridView Sepet_bil;
 
         /// <summary>
-        /// Sepet_form control.
+        /// Menu control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.FormView Sepet_form;
+        protected global::System.Web.UI.WebControls.GridView Menu;
+
+        /// <summary>
+        /// Kul_bil_form_sql control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.SqlDataSource Kul_bil_form_sql;
+
+        /// <summary>
+        /// SqlDataSource1 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.SqlDataSource SqlDataSource1;
+
+        /// <summary>
+        /// SqlDataSource2 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.SqlDataSource SqlDataSource2;
 
         /// <summary>
         /// Gir_bil_sql control.
@@ -211,33 +202,6 @@ namespace Web_Tab_Proje
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.SqlDataSource Kul_bil_sql;
-
-        /// <summary>
-        /// Kul_bil_form_sql control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.SqlDataSource Kul_bil_form_sql;
-
-        /// <summary>
-        /// SqlDataSource1 control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.SqlDataSource SqlDataSource1;
-
-        /// <summary>
-        /// SqlDataSource2 control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.SqlDataSource SqlDataSource2;
 
         /// <summary>
         /// SqlDataSource3 control.
