@@ -3,10 +3,9 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
     <style type="text/css">
         .auto-style3 {
-            width: 190px;
+width: 190px;
             height: 80px;
-           
-            
+            margin-top: 11px;            
         }
 
         .auto-style15 {
@@ -28,6 +27,17 @@
         
         .auto-style20 {
             width: 330px;
+        }
+        
+        .auto-style21 {
+            width: 190px;
+            height: 80px;
+            margin-top: 11px;
+        }
+        .auto-style22 {
+            width: 190px;
+            height: 80px;
+            margin-top: 11px;
         }
         
         </style>
@@ -64,7 +74,7 @@
                 <td>
 
 
-        <img src="Resimler/yemekler/tarhana_corbasi.jpg" class="auto-style3" alt="tarhana_corbasi" align="center">
+        <img src="Resimler/yemekler/tarhana_corbasi.jpg" class="auto-style22" alt="tarhana_corbasi" align="center">
         <h5 class="card-title">
             <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:Ozak_ErciyasConnectionString2 %>" SelectCommand="SELECT [yemek_adi] FROM [Yemek_menü] WHERE ([yemek_id] = @yemek_id)">
                 <SelectParameters>
@@ -104,7 +114,10 @@
                 </Fields>
             </asp:DetailsView>
         </h5>
-        <a href="#" class="btn btn-primary">Go somewhere</a>
+                    <asp:Button class="btn btn-primary" ID="Button1" runat="server" Text="Sepete Ekle" OnClick="Button1_Click" />
+        
+
+                    
 
         </td>
                 <td>
@@ -150,7 +163,7 @@
                 </Fields>
             </asp:DetailsView>
         </h5>
-        <a href="#" class="btn btn-primary">Go somewhere</a></td>
+        <asp:Button class="btn btn-primary" ID="Button2" runat="server" Text="Sepete Ekle" OnClick="Button2_Click" /></td>
                 <td><img src="Resimler/yemekler/mercimek_corbasi.jpg" class="auto-style3" alt="mercimek_corbasi" align="center">
        
         <h5 class="card-title">
@@ -192,7 +205,8 @@
                 </Fields>
             </asp:DetailsView>
         </h5>
-        <a href="#" class="btn btn-primary">Go somewhere</a></td>
+                    <asp:Button ID="Button3" runat="server" class="btn btn-primary" Text="Sepete Ekle" OnClick="Button3_Click" />
+                </td>
             </tr>
         </table>
         <br />
@@ -200,7 +214,7 @@
         <h1 style="color: white"><a name="EtliYemek">Etli Yemekler</a></h1>
         <table class="auto-style19">
             <tr>
-                <td>
+                <td class="auto-style21">
          <img src="Resimler/yemekler/tas_kebabi.jpg" class="auto-style3" alt="tas_kebabi" align="center">
   <h5 class="card-title">
             <asp:SqlDataSource ID="SqlDataSource10" runat="server" ConnectionString="<%$ ConnectionStrings:Ozak_ErciyasConnectionString2 %>" SelectCommand="SELECT [yemek_adi] FROM [Yemek_menü] WHERE ([yemek_id] = @yemek_id)">
@@ -235,8 +249,9 @@
                 </Fields>
             </asp:DetailsView>
         </h5>
-        <a href="#" class="btn btn-primary">Go somewhere</a></td>
-                <td>    <img src="Resimler/yemekler/izmir_kofte.jpg" class="auto-style3" alt="izmir_kofte" align="center">
+                    <asp:Button ID="Button4" runat="server" class="btn btn-primary" Text="Sepete Ekle" OnClick="Button4_Click" />
+                </td>
+                <td class="auto-style21">    <img src="Resimler/yemekler/izmir_kofte.jpg" class="auto-style3" alt="izmir_kofte" align="center">
   <h5 class="card-title">
             <asp:SqlDataSource ID="SqlDataSource13" runat="server" ConnectionString="<%$ ConnectionStrings:Ozak_ErciyasConnectionString2 %>" SelectCommand="SELECT [yemek_adi] FROM [Yemek_menü] WHERE ([yemek_id] = @yemek_id)">
                 <SelectParameters>
@@ -270,14 +285,16 @@
                 </Fields>
             </asp:DetailsView>
         </h5>
-        <a href="#" class="btn btn-primary">Go somewhere</a></td>
-                <td>&nbsp;<img src="Resimler/yemekler/tavuk_sote.jpg" class="auto-style3" alt="tavuk_sote" align="center">
+                    <asp:Button ID="Button5" runat="server" class="btn btn-primary" Text="Sepete Ekle" OnClick="Button5_Click" />
+                </td>
+                <td class="auto-style21">&nbsp;<img src="Resimler/yemekler/tavuk_sote.jpg" class="auto-style3" alt="tavuk_sote" align="center">
 <h5 class="card-title">
             <asp:SqlDataSource ID="SqlDataSource16" runat="server" ConnectionString="<%$ ConnectionStrings:Ozak_ErciyasConnectionString2 %>" SelectCommand="SELECT [yemek_adi] FROM [Yemek_menü] WHERE ([yemek_id] = @yemek_id)">
                 <SelectParameters>
-                    <asp:ControlParameter ControlID="tavuksis_id" Name="yemek_id" PropertyName="Text" Type="Int32" />
+                    <asp:ControlParameter ControlID="tavuk_sote_id" Name="yemek_id" PropertyName="Text" Type="Int32" />
                 </SelectParameters>
             </asp:SqlDataSource>
+            <asp:Label ID="tavuk_sote_id" runat="server" Text="8" Visible="False"></asp:Label>
             <asp:DetailsView ID="DetailsView16" runat="server" AutoGenerateRows="False" BorderStyle="None" DataSourceID="SqlDataSource16" Height="16px" Width="168px" BackColor="White">
                 <Fields>
                     <asp:BoundField DataField="yemek_adi" SortExpression="yemek_adi" />
@@ -285,7 +302,7 @@
             </asp:DetailsView>
             <asp:SqlDataSource ID="SqlDataSource17" runat="server" ConnectionString="<%$ ConnectionStrings:Ozak_ErciyasConnectionString2 %>" SelectCommand="SELECT [yemek_icerigi] FROM [Yemek_menü] WHERE ([yemek_id] = @yemek_id)">
                 <SelectParameters>
-                    <asp:ControlParameter ControlID="tavuksis_id" Name="yemek_id" PropertyName="Text" Type="Int32" />
+                    <asp:ControlParameter ControlID="tavuk_sote_id" Name="yemek_id" PropertyName="Text" Type="Int32" />
                 </SelectParameters>
             </asp:SqlDataSource>
             <asp:DetailsView ID="DetailsView17" runat="server" AutoGenerateRows="False" BorderStyle="None" DataSourceID="SqlDataSource17" Height="16px" Width="168px" BackColor="White">
@@ -295,7 +312,7 @@
             </asp:DetailsView>
             <asp:SqlDataSource ID="SqlDataSource18" runat="server" ConnectionString="<%$ ConnectionStrings:Ozak_ErciyasConnectionString2 %>" SelectCommand="SELECT [yemek_fiyati] FROM [Yemek_menü] WHERE ([yemek_id] = @yemek_id)">
                 <SelectParameters>
-                    <asp:ControlParameter ControlID="tavuksis_id" Name="yemek_id" PropertyName="Text" Type="Int32" />
+                    <asp:ControlParameter ControlID="tavuk_sote_id" Name="yemek_id" PropertyName="Text" Type="Int32" />
                 </SelectParameters>
             </asp:SqlDataSource>
             <asp:DetailsView ID="DetailsView18" runat="server" AutoGenerateRows="False" BorderStyle="None" DataSourceID="SqlDataSource18" Height="16px" Width="168px" BackColor="White">
@@ -304,10 +321,11 @@
                 </Fields>
             </asp:DetailsView>
         </h5>
-        <a href="#" class="btn btn-primary">Go somewhere</a></td>
+                    <asp:Button ID="Button6" runat="server" class="btn btn-primary" Text="Sepete Ekle" OnClick="Button6_Click" />
+                </td>
             </tr>
         </table>
-        <br />
+        
 &nbsp;    <br />
         <br /> <h1 style="color:white"><a name="SebzeliYemek">Sebzeli Yemekler</a></h1>
         <table class="auto-style19">
@@ -348,7 +366,8 @@
         </Fields>
     </asp:DetailsView>
 </h5>
-<a href="#" class="btn btn-primary">Go somewhere</a></td>
+                    <asp:Button ID="Button7" runat="server" class="btn btn-primary" Text="Sepete Ekle" OnClick="Button7_Click" />
+                </td>
                 <td>&nbsp;<img src="Resimler/yemekler/musakka.jpg" class="auto-style3" alt="musakka" align="center">
 <h5 class="card-title">
     <asp:SqlDataSource ID="SqlDataSource22" runat="server" ConnectionString="<%$ ConnectionStrings:Ozak_ErciyasConnectionString2 %>" SelectCommand="SELECT [yemek_adi] FROM [Yemek_menü] WHERE ([yemek_id] = @yemek_id)">
@@ -383,7 +402,8 @@
         </Fields>
     </asp:DetailsView>
 </h5>
-<a href="#" class="btn btn-primary">Go somewhere</a></td>
+                    <asp:Button ID="Button8" runat="server" class="btn btn-primary" Text="Sepete Ekle" OnClick="Button8_Click" />
+                </td>
             </tr>
         </table>
         <br />
@@ -426,7 +446,8 @@
         </Fields>
     </asp:DetailsView>
 </h5>
-<a href="#" class="btn btn-primary">Go somewhere</a></td>
+                    <asp:Button ID="Button9" runat="server" class="btn btn-primary" Text="Sepete Ekle" OnClick="Button9_Click" />
+                </td>
                 <td><img src="Resimler/yemekler/tavuk_sis_kebabi.jpg" class="auto-style3" alt="tavuk_sis_kebabi" align="center">
 <h5 class="card-title">
     <asp:SqlDataSource ID="SqlDataSource28" runat="server" ConnectionString="<%$ ConnectionStrings:Ozak_ErciyasConnectionString2 %>" SelectCommand="SELECT [yemek_adi] FROM [Yemek_menü] WHERE ([yemek_id] = @yemek_id)">
@@ -461,7 +482,8 @@
         </Fields>
     </asp:DetailsView>
 </h5>
-<a href="#" class="btn btn-primary">Go somewhere</a></td>
+                    <asp:Button ID="Button10" runat="server" class="btn btn-primary" Text="Sepete Ekle" OnClick="Button10_Click" />
+                </td>
                 <td>&nbsp;<img src="Resimler/yemekler/beyti_kebabi.jpg" class="auto-style3" alt="beyti_kebabi" align="center">
 <h5 class="card-title">
     <asp:SqlDataSource ID="SqlDataSource94" runat="server" ConnectionString="<%$ ConnectionStrings:Ozak_ErciyasConnectionString2 %>" SelectCommand="SELECT [yemek_adi] FROM [Yemek_menü] WHERE ([yemek_id] = @yemek_id)">
@@ -496,7 +518,8 @@
         </Fields>
     </asp:DetailsView>
 </h5>
-<a href="#" class="btn btn-primary">Go somewhere</a></td>
+                    <asp:Button ID="Button11" runat="server" class="btn btn-primary" Text="Sepete Ekle" OnClick="Button11_Click" />
+                </td>
             </tr>
         </table>
         <br />
@@ -541,7 +564,8 @@
         </Fields>
     </asp:DetailsView>
 </h5>
-<a href="#" class="btn btn-primary">Go somewhere</a></td>
+                    <asp:Button ID="Button12" runat="server" class="btn btn-primary" Text="Sepete Ekle" OnClick="Button12_Click" />
+                </td>
                
                 <td><img src="Resimler/yemekler/pirinc_pilavi.jpg" class="auto-style3" alt="pirinc_pilavi" align="center">
 <h5 class="card-title">
@@ -577,7 +601,8 @@
         </Fields>
     </asp:DetailsView>
 </h5>
-<a href="#" class="btn btn-primary">Go somewhere</a></td>
+                    <asp:Button ID="Button13" runat="server" class="btn btn-primary" Text="Sepete Ekle" OnClick="Button13_Click" />
+                </td>
             </tr>
         </table>
         <br />
@@ -620,7 +645,8 @@
         </Fields>
     </asp:DetailsView>
 </h5>
-<a href="#" class="btn btn-primary">Go somewhere</a></td>
+                    <asp:Button ID="Button14" runat="server" class="btn btn-primary" Text="Sepete Ekle" OnClick="Button14_Click" />
+                </td>
                 <td><img src="Resimler/yemekler/mevsim_salata.jpg" class="auto-style3" alt="mevsim_salata" align="center">
 <h5 class="card-title">
     <asp:SqlDataSource ID="SqlDataSource40" runat="server" ConnectionString="<%$ ConnectionStrings:Ozak_ErciyasConnectionString2 %>" SelectCommand="SELECT [yemek_adi] FROM [Yemek_menü] WHERE ([yemek_id] = @yemek_id)">
@@ -655,7 +681,8 @@
         </Fields>
     </asp:DetailsView>
 </h5>
-<a href="#" class="btn btn-primary">Go somewhere</a></td>
+                    <asp:Button ID="Button15" runat="server" class="btn btn-primary" Text="Sepete Ekle" OnClick="Button15_Click" />
+                </td>
                 <td><img src="Resimler/yemekler/akdeniz_salata.jpg" class="auto-style3" alt="akdeniz_salata" align="center">
 <h5 class="card-title">
     <asp:SqlDataSource ID="SqlDataSource43" runat="server" ConnectionString="<%$ ConnectionStrings:Ozak_ErciyasConnectionString2 %>" SelectCommand="SELECT [yemek_adi] FROM [Yemek_menü] WHERE ([yemek_id] = @yemek_id)">
@@ -690,7 +717,8 @@
         </Fields>
     </asp:DetailsView>
 </h5>
-<a href="#" class="btn btn-primary">Go somewhere</a></td>
+                    <asp:Button ID="Button16" runat="server" class="btn btn-primary" Text="Sepete Ekle" OnClick="Button16_Click" />
+                </td>
             </tr>
         </table>
         <br />
@@ -733,7 +761,8 @@
         </Fields>
     </asp:DetailsView>
 </h5>
-<a href="#" class="btn btn-primary">Go somewhere</a></td>
+                    <asp:Button ID="Button17" runat="server" class="btn btn-primary" Text="Sepete Ekle" OnClick="Button17_Click" />
+                </td>
                 <td>&nbsp;<img src="Resimler/yemekler/fistikli_baklava.jpg" class="auto-style3" alt="fistikli_baklava" align="center">
 <h5 class="card-title">
     <asp:SqlDataSource ID="SqlDataSource52" runat="server" ConnectionString="<%$ ConnectionStrings:Ozak_ErciyasConnectionString2 %>" SelectCommand="SELECT [yemek_adi] FROM [Yemek_menü] WHERE ([yemek_id] = @yemek_id)">
@@ -768,7 +797,8 @@
         </Fields>
     </asp:DetailsView>
 </h5>
-<a href="#" class="btn btn-primary">Go somewhere</a></td>
+                    <asp:Button ID="Button18" runat="server" class="btn btn-primary" Text="Sepete Ekle" OnClick="Button18_Click" />
+                </td>
                 <td><img src="Resimler/yemekler/firin_sutlac.jpg" class="auto-style3" alt="firin_sutlac" align="center">
 <h5 class="card-title">
     <asp:SqlDataSource ID="SqlDataSource55" runat="server" ConnectionString="<%$ ConnectionStrings:Ozak_ErciyasConnectionString2 %>" SelectCommand="SELECT [yemek_adi] FROM [Yemek_menü] WHERE ([yemek_id] = @yemek_id)">
@@ -803,7 +833,8 @@
         </Fields>
     </asp:DetailsView>
 </h5>
-<a href="#" class="btn btn-primary">Go somewhere</a></td>
+                    <asp:Button ID="Button19" runat="server" class="btn btn-primary" Text="Sepete Ekle" OnClick="Button19_Click" />
+                </td>
             </tr>
             <tr>
                 <td><img src="Resimler/yemekler/trilece.jpg" class="auto-style3" alt="trilece" align="center">
@@ -840,7 +871,8 @@
         </Fields>
     </asp:DetailsView>
 </h5>
-<a href="#" class="btn btn-primary">Go somewhere</a></td>
+                    <asp:Button ID="Button20" runat="server" class="btn btn-primary" Text="Sepete Ekle" OnClick="Button20_Click" />
+                </td>
                 <td>&nbsp;<img src="Resimler/yemekler/kunefe.jpg" class="auto-style3" alt="kunefe" align="center">
 <h5 class="card-title">
     <asp:SqlDataSource ID="SqlDataSource61" runat="server" ConnectionString="<%$ ConnectionStrings:Ozak_ErciyasConnectionString2 %>" SelectCommand="SELECT [yemek_adi] FROM [Yemek_menü] WHERE ([yemek_id] = @yemek_id)">
@@ -875,7 +907,8 @@
         </Fields>
     </asp:DetailsView>
 </h5>
-<a href="#" class="btn btn-primary">Go somewhere</a></td>
+                    <asp:Button ID="Button21" runat="server" class="btn btn-primary" Text="Sepete Ekle" OnClick="Button21_Click" />
+                </td>
                 <td><img src="Resimler/yemekler/profiterol.jpg" class="auto-style3" alt="profiterol" align="center">
 <h5 class="card-title">
     <asp:SqlDataSource ID="SqlDataSource64" runat="server" ConnectionString="<%$ ConnectionStrings:Ozak_ErciyasConnectionString2 %>" SelectCommand="SELECT [yemek_adi] FROM [Yemek_menü] WHERE ([yemek_id] = @yemek_id)">
@@ -910,7 +943,8 @@
         </Fields>
     </asp:DetailsView>
 </h5>
-<a href="#" class="btn btn-primary">Go somewhere</a></td>
+                    <asp:Button ID="Button22" runat="server" class="btn btn-primary" Text="Sepete Ekle" OnClick="Button22_Click" />
+                </td>
             </tr>
             <tr>
                 <td>&nbsp;</td>
@@ -949,7 +983,8 @@
         </Fields>
     </asp:DetailsView>
 </h5>
-<a href="#" class="btn btn-primary">Go somewhere</a></td>
+                    <asp:Button ID="Button23" runat="server" class="btn btn-primary" Text="Sepete Ekle" OnClick="Button23_Click" />
+                </td>
                 <td>&nbsp;</td>
             </tr>
         </table>
@@ -1000,7 +1035,8 @@
         </Fields>
     </asp:DetailsView>
 </h5>
-<a href="#" class="btn btn-primary">Go somewhere</a></td>
+                    <asp:Button ID="Button24" runat="server" class="btn btn-primary" Text="Sepete Ekle" OnClick="Button24_Click" />
+                </td>
                 <td><img src="Resimler/yemekler/fanta.jpg" class="auto-style3" alt="fanta" align="center">
 <h5 class="card-title">
     <asp:SqlDataSource ID="SqlDataSource100" runat="server" ConnectionString="<%$ ConnectionStrings:Ozak_ErciyasConnectionString2 %>" SelectCommand="SELECT [yemek_adi] FROM [Yemek_menü] WHERE ([yemek_id] = @yemek_id)">
@@ -1035,7 +1071,8 @@
         </Fields>
     </asp:DetailsView>
 </h5>
-<a href="#" class="btn btn-primary">Go somewhere</a></td>
+                    <asp:Button ID="Button25" runat="server" class="btn btn-primary" Text="Sepete Ekle" OnClick="Button25_Click" />
+                </td>
                 <td>&nbsp;<img src="Resimler/yemekler/sprite.jpg" class="auto-style3" alt="sprite" align="center">
 <h5 class="card-title">
     <asp:SqlDataSource ID="SqlDataSource103" runat="server" ConnectionString="<%$ ConnectionStrings:Ozak_ErciyasConnectionString2 %>" SelectCommand="SELECT [yemek_adi] FROM [Yemek_menü] WHERE ([yemek_id] = @yemek_id)">
@@ -1070,7 +1107,8 @@
         </Fields>
     </asp:DetailsView>
 </h5>
-<a href="#" class="btn btn-primary">Go somewhere</a></td>
+                    <asp:Button ID="Button26" runat="server" class="btn btn-primary" Text="Sepete Ekle" OnClick="Button26_Click" />
+                </td>
             </tr>
             <tr>
                 <td>&nbsp;<img src="Resimler/yemekler/ice_tea.jpg" class="auto-style3" alt="ice_tea" align="center">
@@ -1107,7 +1145,8 @@
         </Fields>
     </asp:DetailsView>
 </h5>
-<a href="#" class="btn btn-primary">Go somewhere</a></td>
+                    <asp:Button ID="Button27" runat="server" class="btn btn-primary" Text="Sepete Ekle" OnClick="Button27_Click" />
+                </td>
                 <td>&nbsp;<img src="Resimler/yemekler/soda.jpg" class="auto-style3" alt="soda" align="center">
 <h5 class="card-title">
     <asp:SqlDataSource ID="SqlDataSource109" runat="server" ConnectionString="<%$ ConnectionStrings:Ozak_ErciyasConnectionString2 %>" SelectCommand="SELECT [yemek_adi] FROM [Yemek_menü] WHERE ([yemek_id] = @yemek_id)">
@@ -1142,7 +1181,8 @@
         </Fields>
     </asp:DetailsView>
 </h5>
-<a href="#" class="btn btn-primary">Go somewhere</a></td>
+                    <asp:Button ID="Button28" runat="server" class="btn btn-primary" Text="Sepete Ekle" OnClick="Button28_Click" />
+                </td>
                 <td><img src="Resimler/yemekler/su.jpg" class="auto-style3" alt="su" align="center">
 <h5 class="card-title">
     <asp:SqlDataSource ID="SqlDataSource112" runat="server" ConnectionString="<%$ ConnectionStrings:Ozak_ErciyasConnectionString2 %>" SelectCommand="SELECT [yemek_adi] FROM [Yemek_menü] WHERE ([yemek_id] = @yemek_id)">
@@ -1177,7 +1217,8 @@
         </Fields>
     </asp:DetailsView>
 </h5>
-<a href="#" class="btn btn-primary">Go somewhere</a></td>
+                    <asp:Button ID="Button29" runat="server" class="btn btn-primary" Text="Sepete Ekle" OnClick="Button29_Click" />
+                </td>
             </tr>
             <tr>
                 <td>&nbsp;<img src="Resimler/yemekler/ayran.jpg" class="auto-style3" alt="ayran" align="center">
@@ -1214,7 +1255,8 @@
         </Fields>
     </asp:DetailsView>
 </h5>
-<a href="#" class="btn btn-primary">Go somewhere</a></td>
+                    <asp:Button ID="Button30" runat="server" class="btn btn-primary" Text="Sepete Ekle" OnClick="Button30_Click" />
+                </td>
                 <td>&nbsp;<img src="Resimler/yemekler/turk_kahvesi.jpg" class="auto-style3" alt="turk_kahvesi" align="center">
 <h5 class="card-title">
     <asp:SqlDataSource ID="SqlDataSource118" runat="server" ConnectionString="<%$ ConnectionStrings:Ozak_ErciyasConnectionString2 %>" SelectCommand="SELECT [yemek_adi] FROM [Yemek_menü] WHERE ([yemek_id] = @yemek_id)">
@@ -1249,7 +1291,8 @@
         </Fields>
     </asp:DetailsView>
 </h5>
-<a href="#" class="btn btn-primary">Go somewhere</a></td>
+                    <asp:Button ID="Button31" runat="server" class="btn btn-primary" Text="Sepete Ekle" OnClick="Button31_Click" />
+                </td>
                 <td><img src="Resimler/yemekler/kahve.jpg" class="auto-style3" alt="kahve" align="center">
 <h5 class="card-title">
     <asp:SqlDataSource ID="SqlDataSource121" runat="server" ConnectionString="<%$ ConnectionStrings:Ozak_ErciyasConnectionString2 %>" SelectCommand="SELECT [yemek_adi] FROM [Yemek_menü] WHERE ([yemek_id] = @yemek_id)">
@@ -1284,7 +1327,8 @@
         </Fields>
     </asp:DetailsView>
 </h5>
-<a href="#" class="btn btn-primary">Go somewhere</a></td>
+                    <asp:Button ID="Button32" runat="server" class="btn btn-primary" Text="Sepete Ekle" OnClick="Button32_Click" />
+                </td>
             </tr>
         </table></a><br />
 &nbsp;</div> 

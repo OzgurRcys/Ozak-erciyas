@@ -78,6 +78,15 @@ namespace Web_Tab_Proje
         protected global::System.Web.UI.WebControls.DetailsView DetailsView3;
 
         /// <summary>
+        /// Button1 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button Button1;
+
+        /// <summary>
         /// SqlDataSource4 control.
         /// </summary>
         /// <remarks>
@@ -139,6 +148,15 @@ namespace Web_Tab_Proje
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.DetailsView DetailsView5;
+
+        /// <summary>
+        /// Button2 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button Button2;
 
         /// <summary>
         /// SqlDataSource7 control.
@@ -204,6 +222,15 @@ namespace Web_Tab_Proje
         protected global::System.Web.UI.WebControls.DetailsView DetailsView9;
 
         /// <summary>
+        /// Button3 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button Button3;
+
+        /// <summary>
         /// SqlDataSource10 control.
         /// </summary>
         /// <remarks>
@@ -265,6 +292,15 @@ namespace Web_Tab_Proje
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.DetailsView DetailsView12;
+
+        /// <summary>
+        /// Button4 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button Button4;
 
         /// <summary>
         /// SqlDataSource13 control.
@@ -330,6 +366,15 @@ namespace Web_Tab_Proje
         protected global::System.Web.UI.WebControls.DetailsView DetailsView15;
 
         /// <summary>
+        /// Button5 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button Button5;
+
+        /// <summary>
         /// SqlDataSource16 control.
         /// </summary>
         /// <remarks>
@@ -337,6 +382,15 @@ namespace Web_Tab_Proje
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.SqlDataSource SqlDataSource16;
+
+        /// <summary>
+        /// tavuk_sote_id control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label tavuk_sote_id;
 
         /// <summary>
         /// DetailsView16 control.
@@ -382,6 +436,15 @@ namespace Web_Tab_Proje
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.DetailsView DetailsView18;
+
+        /// <summary>
+        /// Button6 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button Button6;
 
         /// <summary>
         /// SqlDataSource19 control.
@@ -447,6 +510,15 @@ namespace Web_Tab_Proje
         protected global::System.Web.UI.WebControls.DetailsView DetailsView21;
 
         /// <summary>
+        /// Button7 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button Button7;
+
+        /// <summary>
         /// SqlDataSource22 control.
         /// </summary>
         /// <remarks>
@@ -508,6 +580,15 @@ namespace Web_Tab_Proje
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.DetailsView DetailsView24;
+
+        /// <summary>
+        /// Button8 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button Button8;
 
         /// <summary>
         /// SqlDataSource25 control.
@@ -573,6 +654,15 @@ namespace Web_Tab_Proje
         protected global::System.Web.UI.WebControls.DetailsView DetailsView27;
 
         /// <summary>
+        /// Button9 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button Button9;
+
+        /// <summary>
         /// SqlDataSource28 control.
         /// </summary>
         /// <remarks>
@@ -634,6 +724,15 @@ namespace Web_Tab_Proje
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.DetailsView DetailsView30;
+
+        /// <summary>
+        /// Button10 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button Button10;
 
         /// <summary>
         /// SqlDataSource94 control.
@@ -699,6 +798,15 @@ namespace Web_Tab_Proje
         protected global::System.Web.UI.WebControls.DetailsView DetailsView96;
 
         /// <summary>
+        /// Button11 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button Button11;
+
+        /// <summary>
         /// SqlDataSource31 control.
         /// </summary>
         /// <remarks>
@@ -760,6 +868,15 @@ namespace Web_Tab_Proje
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.DetailsView DetailsView33;
+
+        /// <summary>
+        /// Button12 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button Button12;
 
         /// <summary>
         /// SqlDataSource34 control.
@@ -825,6 +942,15 @@ namespace Web_Tab_Proje
         protected global::System.Web.UI.WebControls.DetailsView DetailsView36;
 
         /// <summary>
+        /// Button13 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button Button13;
+
+        /// <summary>
         /// SqlDataSource37 control.
         /// </summary>
         /// <remarks>
@@ -886,6 +1012,15 @@ namespace Web_Tab_Proje
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.DetailsView DetailsView39;
+
+        /// <summary>
+        /// Button14 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button Button14;
 
         /// <summary>
         /// SqlDataSource40 control.
@@ -951,6 +1086,15 @@ namespace Web_Tab_Proje
         protected global::System.Web.UI.WebControls.DetailsView DetailsView42;
 
         /// <summary>
+        /// Button15 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button Button15;
+
+        /// <summary>
         /// SqlDataSource43 control.
         /// </summary>
         /// <remarks>
@@ -1012,6 +1156,15 @@ namespace Web_Tab_Proje
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.DetailsView DetailsView45;
+
+        /// <summary>
+        /// Button16 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button Button16;
 
         /// <summary>
         /// SqlDataSource49 control.
@@ -1077,6 +1230,15 @@ namespace Web_Tab_Proje
         protected global::System.Web.UI.WebControls.DetailsView DetailsView51;
 
         /// <summary>
+        /// Button17 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button Button17;
+
+        /// <summary>
         /// SqlDataSource52 control.
         /// </summary>
         /// <remarks>
@@ -1138,6 +1300,15 @@ namespace Web_Tab_Proje
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.DetailsView DetailsView54;
+
+        /// <summary>
+        /// Button18 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button Button18;
 
         /// <summary>
         /// SqlDataSource55 control.
@@ -1203,6 +1374,15 @@ namespace Web_Tab_Proje
         protected global::System.Web.UI.WebControls.DetailsView DetailsView57;
 
         /// <summary>
+        /// Button19 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button Button19;
+
+        /// <summary>
         /// SqlDataSource58 control.
         /// </summary>
         /// <remarks>
@@ -1264,6 +1444,15 @@ namespace Web_Tab_Proje
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.DetailsView DetailsView60;
+
+        /// <summary>
+        /// Button20 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button Button20;
 
         /// <summary>
         /// SqlDataSource61 control.
@@ -1329,6 +1518,15 @@ namespace Web_Tab_Proje
         protected global::System.Web.UI.WebControls.DetailsView DetailsView63;
 
         /// <summary>
+        /// Button21 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button Button21;
+
+        /// <summary>
         /// SqlDataSource64 control.
         /// </summary>
         /// <remarks>
@@ -1390,6 +1588,15 @@ namespace Web_Tab_Proje
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.DetailsView DetailsView66;
+
+        /// <summary>
+        /// Button22 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button Button22;
 
         /// <summary>
         /// SqlDataSource46 control.
@@ -1455,6 +1662,15 @@ namespace Web_Tab_Proje
         protected global::System.Web.UI.WebControls.DetailsView DetailsView48;
 
         /// <summary>
+        /// Button23 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button Button23;
+
+        /// <summary>
         /// SqlDataSource97 control.
         /// </summary>
         /// <remarks>
@@ -1516,6 +1732,15 @@ namespace Web_Tab_Proje
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.DetailsView DetailsView99;
+
+        /// <summary>
+        /// Button24 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button Button24;
 
         /// <summary>
         /// SqlDataSource100 control.
@@ -1581,6 +1806,15 @@ namespace Web_Tab_Proje
         protected global::System.Web.UI.WebControls.DetailsView DetailsView102;
 
         /// <summary>
+        /// Button25 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button Button25;
+
+        /// <summary>
         /// SqlDataSource103 control.
         /// </summary>
         /// <remarks>
@@ -1642,6 +1876,15 @@ namespace Web_Tab_Proje
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.DetailsView DetailsView105;
+
+        /// <summary>
+        /// Button26 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button Button26;
 
         /// <summary>
         /// SqlDataSource106 control.
@@ -1707,6 +1950,15 @@ namespace Web_Tab_Proje
         protected global::System.Web.UI.WebControls.DetailsView DetailsView108;
 
         /// <summary>
+        /// Button27 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button Button27;
+
+        /// <summary>
         /// SqlDataSource109 control.
         /// </summary>
         /// <remarks>
@@ -1768,6 +2020,15 @@ namespace Web_Tab_Proje
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.DetailsView DetailsView111;
+
+        /// <summary>
+        /// Button28 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button Button28;
 
         /// <summary>
         /// SqlDataSource112 control.
@@ -1833,6 +2094,15 @@ namespace Web_Tab_Proje
         protected global::System.Web.UI.WebControls.DetailsView DetailsView114;
 
         /// <summary>
+        /// Button29 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button Button29;
+
+        /// <summary>
         /// SqlDataSource115 control.
         /// </summary>
         /// <remarks>
@@ -1894,6 +2164,15 @@ namespace Web_Tab_Proje
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.DetailsView DetailsView117;
+
+        /// <summary>
+        /// Button30 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button Button30;
 
         /// <summary>
         /// SqlDataSource118 control.
@@ -1959,6 +2238,15 @@ namespace Web_Tab_Proje
         protected global::System.Web.UI.WebControls.DetailsView DetailsView120;
 
         /// <summary>
+        /// Button31 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button Button31;
+
+        /// <summary>
         /// SqlDataSource121 control.
         /// </summary>
         /// <remarks>
@@ -2020,5 +2308,14 @@ namespace Web_Tab_Proje
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.DetailsView DetailsView123;
+
+        /// <summary>
+        /// Button32 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button Button32;
     }
 }
