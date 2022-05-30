@@ -287,6 +287,10 @@ namespace Web_Tab_Proje {
             
             private global::System.Data.DataColumn columnkullanici_telefon;
             
+            private global::System.Data.DataColumn columnkullanici_mail;
+            
+            private global::System.Data.DataColumn columnkullanici_sifre;
+            
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             public Kullanici_bilgi_tablosuDataTable() {
@@ -354,6 +358,22 @@ namespace Web_Tab_Proje {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public global::System.Data.DataColumn kullanici_mailColumn {
+                get {
+                    return this.columnkullanici_mail;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public global::System.Data.DataColumn kullanici_sifreColumn {
+                get {
+                    return this.columnkullanici_sifre;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             [global::System.ComponentModel.Browsable(false)]
             public int Count {
                 get {
@@ -389,13 +409,15 @@ namespace Web_Tab_Proje {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public Kullanici_bilgi_tablosuRow AddKullanici_bilgi_tablosuRow(string kullanici_adi, string kullanici_soyadi, int kullanici_telefon) {
+            public Kullanici_bilgi_tablosuRow AddKullanici_bilgi_tablosuRow(string kullanici_adi, string kullanici_soyadi, int kullanici_telefon, string kullanici_mail, string kullanici_sifre) {
                 Kullanici_bilgi_tablosuRow rowKullanici_bilgi_tablosuRow = ((Kullanici_bilgi_tablosuRow)(this.NewRow()));
                 object[] columnValuesArray = new object[] {
                         null,
                         kullanici_adi,
                         kullanici_soyadi,
-                        kullanici_telefon};
+                        kullanici_telefon,
+                        kullanici_mail,
+                        kullanici_sifre};
                 rowKullanici_bilgi_tablosuRow.ItemArray = columnValuesArray;
                 this.Rows.Add(rowKullanici_bilgi_tablosuRow);
                 return rowKullanici_bilgi_tablosuRow;
@@ -429,6 +451,8 @@ namespace Web_Tab_Proje {
                 this.columnkullanici_adi = base.Columns["kullanici_adi"];
                 this.columnkullanici_soyadi = base.Columns["kullanici_soyadi"];
                 this.columnkullanici_telefon = base.Columns["kullanici_telefon"];
+                this.columnkullanici_mail = base.Columns["kullanici_mail"];
+                this.columnkullanici_sifre = base.Columns["kullanici_sifre"];
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -442,6 +466,10 @@ namespace Web_Tab_Proje {
                 base.Columns.Add(this.columnkullanici_soyadi);
                 this.columnkullanici_telefon = new global::System.Data.DataColumn("kullanici_telefon", typeof(int), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnkullanici_telefon);
+                this.columnkullanici_mail = new global::System.Data.DataColumn("kullanici_mail", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnkullanici_mail);
+                this.columnkullanici_sifre = new global::System.Data.DataColumn("kullanici_sifre", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnkullanici_sifre);
                 this.Constraints.Add(new global::System.Data.UniqueConstraint("Constraint1", new global::System.Data.DataColumn[] {
                                 this.columnkullanici_id}, true));
                 this.columnkullanici_id.AutoIncrement = true;
@@ -455,6 +483,10 @@ namespace Web_Tab_Proje {
                 this.columnkullanici_soyadi.AllowDBNull = false;
                 this.columnkullanici_soyadi.MaxLength = 20;
                 this.columnkullanici_telefon.AllowDBNull = false;
+                this.columnkullanici_mail.AllowDBNull = false;
+                this.columnkullanici_mail.MaxLength = 50;
+                this.columnkullanici_sifre.AllowDBNull = false;
+                this.columnkullanici_sifre.MaxLength = 50;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -638,6 +670,28 @@ namespace Web_Tab_Proje {
                     this[this.tableKullanici_bilgi_tablosu.kullanici_telefonColumn] = value;
                 }
             }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public string kullanici_mail {
+                get {
+                    return ((string)(this[this.tableKullanici_bilgi_tablosu.kullanici_mailColumn]));
+                }
+                set {
+                    this[this.tableKullanici_bilgi_tablosu.kullanici_mailColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public string kullanici_sifre {
+                get {
+                    return ((string)(this[this.tableKullanici_bilgi_tablosu.kullanici_sifreColumn]));
+                }
+                set {
+                    this[this.tableKullanici_bilgi_tablosu.kullanici_sifreColumn] = value;
+                }
+            }
         }
         
         /// <summary>
@@ -803,6 +857,8 @@ namespace Web_Tab_Proje.DataSet1TableAdapters {
             tableMapping.ColumnMappings.Add("kullanici_adi", "kullanici_adi");
             tableMapping.ColumnMappings.Add("kullanici_soyadi", "kullanici_soyadi");
             tableMapping.ColumnMappings.Add("kullanici_telefon", "kullanici_telefon");
+            tableMapping.ColumnMappings.Add("kullanici_mail", "kullanici_mail");
+            tableMapping.ColumnMappings.Add("kullanici_sifre", "kullanici_sifre");
             this._adapter.TableMappings.Add(tableMapping);
             this._adapter.DeleteCommand = new global::System.Data.SqlClient.SqlCommand();
             this._adapter.DeleteCommand.Connection = this.Connection;
@@ -813,20 +869,23 @@ namespace Web_Tab_Proje.DataSet1TableAdapters {
             this._adapter.InsertCommand = new global::System.Data.SqlClient.SqlCommand();
             this._adapter.InsertCommand.Connection = this.Connection;
             this._adapter.InsertCommand.CommandText = "INSERT INTO [Kullanici_bilgi_tablosu] ([kullanici_adi], [kullanici_soyadi], [kull" +
-                "anici_telefon]) VALUES (@kullanici_adi, @kullanici_soyadi, @kullanici_telefon)";
+                "anici_telefon], [kullanici_mail], [kullanici_sifre]) VALUES (@kullanici_adi, @ku" +
+                "llanici_soyadi, @kullanici_telefon, @kullanici_mail, @kullanici_sifre)";
             this._adapter.InsertCommand.CommandType = global::System.Data.CommandType.Text;
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@kullanici_adi", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "kullanici_adi", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@kullanici_soyadi", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "kullanici_soyadi", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@kullanici_telefon", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "kullanici_telefon", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@kullanici_mail", global::System.Data.SqlDbType.NChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "kullanici_mail", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@kullanici_sifre", global::System.Data.SqlDbType.NChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "kullanici_sifre", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.UpdateCommand = new global::System.Data.SqlClient.SqlCommand();
             this._adapter.UpdateCommand.Connection = this.Connection;
-            this._adapter.UpdateCommand.CommandText = "UPDATE [Kullanici_bilgi_tablosu] SET [kullanici_adi] = @kullanici_adi, [kullanici" +
-                "_soyadi] = @kullanici_soyadi, [kullanici_telefon] = @kullanici_telefon WHERE (([" +
-                "kullanici_id] = @Original_kullanici_id))";
+            this._adapter.UpdateCommand.CommandText = @"UPDATE [Kullanici_bilgi_tablosu] SET [kullanici_adi] = @kullanici_adi, [kullanici_soyadi] = @kullanici_soyadi, [kullanici_telefon] = @kullanici_telefon, [kullanici_mail] = @kullanici_mail, [kullanici_sifre] = @kullanici_sifre WHERE (([kullanici_id] = @Original_kullanici_id))";
             this._adapter.UpdateCommand.CommandType = global::System.Data.CommandType.Text;
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@kullanici_adi", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "kullanici_adi", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@kullanici_soyadi", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "kullanici_soyadi", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@kullanici_telefon", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "kullanici_telefon", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@kullanici_mail", global::System.Data.SqlDbType.NChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "kullanici_mail", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@kullanici_sifre", global::System.Data.SqlDbType.NChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "kullanici_sifre", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_kullanici_id", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "kullanici_id", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
         }
         
@@ -843,7 +902,8 @@ namespace Web_Tab_Proje.DataSet1TableAdapters {
             this._commandCollection = new global::System.Data.SqlClient.SqlCommand[1];
             this._commandCollection[0] = new global::System.Data.SqlClient.SqlCommand();
             this._commandCollection[0].Connection = this.Connection;
-            this._commandCollection[0].CommandText = "SELECT Kullanici_bilgi_tablosu.*\r\nFROM     Kullanici_bilgi_tablosu";
+            this._commandCollection[0].CommandText = "SELECT kullanici_id, kullanici_adi, kullanici_soyadi, kullanici_telefon, kullanic" +
+                "i_mail, kullanici_sifre\r\nFROM     Kullanici_bilgi_tablosu";
             this._commandCollection[0].CommandType = global::System.Data.CommandType.Text;
         }
         
@@ -926,7 +986,7 @@ namespace Web_Tab_Proje.DataSet1TableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Insert, true)]
-        public virtual int Insert(string kullanici_adi, string kullanici_soyadi, int kullanici_telefon) {
+        public virtual int Insert(string kullanici_adi, string kullanici_soyadi, int kullanici_telefon, string kullanici_mail, string kullanici_sifre) {
             if ((kullanici_adi == null)) {
                 throw new global::System.ArgumentNullException("kullanici_adi");
             }
@@ -940,6 +1000,18 @@ namespace Web_Tab_Proje.DataSet1TableAdapters {
                 this.Adapter.InsertCommand.Parameters[1].Value = ((string)(kullanici_soyadi));
             }
             this.Adapter.InsertCommand.Parameters[2].Value = ((int)(kullanici_telefon));
+            if ((kullanici_mail == null)) {
+                throw new global::System.ArgumentNullException("kullanici_mail");
+            }
+            else {
+                this.Adapter.InsertCommand.Parameters[3].Value = ((string)(kullanici_mail));
+            }
+            if ((kullanici_sifre == null)) {
+                throw new global::System.ArgumentNullException("kullanici_sifre");
+            }
+            else {
+                this.Adapter.InsertCommand.Parameters[4].Value = ((string)(kullanici_sifre));
+            }
             global::System.Data.ConnectionState previousConnectionState = this.Adapter.InsertCommand.Connection.State;
             if (((this.Adapter.InsertCommand.Connection.State & global::System.Data.ConnectionState.Open) 
                         != global::System.Data.ConnectionState.Open)) {
@@ -960,7 +1032,7 @@ namespace Web_Tab_Proje.DataSet1TableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Update, true)]
-        public virtual int Update(string kullanici_adi, string kullanici_soyadi, int kullanici_telefon, int Original_kullanici_id) {
+        public virtual int Update(string kullanici_adi, string kullanici_soyadi, int kullanici_telefon, string kullanici_mail, string kullanici_sifre, int Original_kullanici_id) {
             if ((kullanici_adi == null)) {
                 throw new global::System.ArgumentNullException("kullanici_adi");
             }
@@ -974,7 +1046,19 @@ namespace Web_Tab_Proje.DataSet1TableAdapters {
                 this.Adapter.UpdateCommand.Parameters[1].Value = ((string)(kullanici_soyadi));
             }
             this.Adapter.UpdateCommand.Parameters[2].Value = ((int)(kullanici_telefon));
-            this.Adapter.UpdateCommand.Parameters[3].Value = ((int)(Original_kullanici_id));
+            if ((kullanici_mail == null)) {
+                throw new global::System.ArgumentNullException("kullanici_mail");
+            }
+            else {
+                this.Adapter.UpdateCommand.Parameters[3].Value = ((string)(kullanici_mail));
+            }
+            if ((kullanici_sifre == null)) {
+                throw new global::System.ArgumentNullException("kullanici_sifre");
+            }
+            else {
+                this.Adapter.UpdateCommand.Parameters[4].Value = ((string)(kullanici_sifre));
+            }
+            this.Adapter.UpdateCommand.Parameters[5].Value = ((int)(Original_kullanici_id));
             global::System.Data.ConnectionState previousConnectionState = this.Adapter.UpdateCommand.Connection.State;
             if (((this.Adapter.UpdateCommand.Connection.State & global::System.Data.ConnectionState.Open) 
                         != global::System.Data.ConnectionState.Open)) {

@@ -40,6 +40,7 @@
 <body>
     <form id="form1" runat="server">
         <p>Raporlamaya Gitmek İçin  <a href="Rapor.aspx"> Tıklayınız</a></p>
+        <p>Menü Raporlamasına Gitmek İçin  <a href="menu_rapor.aspx"> Tıklayınız</a></p>
 
         <div class="auto-style1">
 

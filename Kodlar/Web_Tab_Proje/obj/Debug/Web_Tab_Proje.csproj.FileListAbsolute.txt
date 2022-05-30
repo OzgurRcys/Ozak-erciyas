@@ -317,3 +317,20 @@ C:\Users\onure\source\repos\Web_Tab_Proje\bin\System.Web.Razor.xml
 C:\Users\onure\source\repos\Web_Tab_Proje\bin\System.Web.WebPages.xml
 C:\Users\onure\source\repos\Web_Tab_Proje\bin\System.Web.WebPages.Deployment.xml
 C:\Users\onure\source\repos\Web_Tab_Proje\bin\System.Web.WebPages.Razor.xml
+D:\Visual Studio Kodları\source\repos\Web_Tab_Proje\bin\roslyn\System.Buffers.dll
+D:\Visual Studio Kodları\source\repos\Web_Tab_Proje\bin\roslyn\System.Memory.dll
+D:\Visual Studio Kodları\source\repos\Web_Tab_Proje\bin\roslyn\System.Numerics.Vectors.dll
+D:\Visual Studio Kodları\source\repos\Web_Tab_Proje\bin\roslyn\System.Runtime.CompilerServices.Unsafe.dll
+D:\Visual Studio Kodları\source\repos\Web_Tab_Proje\bin\Microsoft.Web.Infrastructure.dll
+D:\Visual Studio Kodları\source\repos\Web_Tab_Proje\bin\System.Web.Helpers.dll
+D:\Visual Studio Kodları\source\repos\Web_Tab_Proje\bin\System.Web.Mvc.dll
+D:\Visual Studio Kodları\source\repos\Web_Tab_Proje\bin\System.Web.Razor.dll
+D:\Visual Studio Kodları\source\repos\Web_Tab_Proje\bin\System.Web.WebPages.Deployment.dll
+D:\Visual Studio Kodları\source\repos\Web_Tab_Proje\bin\System.Web.WebPages.dll
+D:\Visual Studio Kodları\source\repos\Web_Tab_Proje\bin\System.Web.WebPages.Razor.dll
+D:\Visual Studio Kodları\source\repos\Web_Tab_Proje\bin\System.Web.Helpers.xml
+D:\Visual Studio Kodları\source\repos\Web_Tab_Proje\bin\System.Web.Mvc.xml
+D:\Visual Studio Kodları\source\repos\Web_Tab_Proje\bin\System.Web.Razor.xml
+D:\Visual Studio Kodları\source\repos\Web_Tab_Proje\bin\System.Web.WebPages.xml
+D:\Visual Studio Kodları\source\repos\Web_Tab_Proje\bin\System.Web.WebPages.Deployment.xml
+D:\Visual Studio Kodları\source\repos\Web_Tab_Proje\bin\System.Web.WebPages.Razor.xml

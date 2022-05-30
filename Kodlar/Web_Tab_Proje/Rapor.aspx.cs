@@ -17,7 +17,7 @@ namespace Web_Tab_Proje
 		{
             if (!this.IsPostBack)
             {
-                string sql_string = "SELECT * FROM Kullanici_bilgi_tablosu";
+                string sql_string = "SELECT kullanici_id, kullanici_adi, kullanici_soyadi, kullanici_telefon, kullanici_mail, kullanici_sifre FROM Kullanici_bilgi_tablosu";
 
                 SqlConnection sqlConnection = new SqlConnection(WebConfigurationManager.ConnectionStrings["Ozak_ErciyasConnectionString2"].ToString());
 
