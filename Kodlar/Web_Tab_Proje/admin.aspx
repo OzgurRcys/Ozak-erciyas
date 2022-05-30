@@ -135,7 +135,7 @@
                                                                         
                             <br />
 
-                            <asp:FormView align="center" ID="Menu_bilgileri_form" runat="server" BackColor="#DEBA84" BorderColor="#DEBA84" BorderStyle="None" BorderWidth="1px" CellPadding="3" CellSpacing="2" DataKeyNames="yemek_id" DataSourceID="SqlDataSource3" GridLines="Both" OnDataBound="Kul_bilgileri_form_DataBound" Width="221px" Height="140px" CssClass="auto-style17">
+                            <asp:FormView align="center" ID="Menu_bilgileri_form" runat="server" BackColor="#DEBA84" BorderColor="#DEBA84" BorderStyle="None" BorderWidth="1px" CellPadding="3" CellSpacing="2" DataKeyNames="yemek_id" DataSourceID="SqlDataSource6" GridLines="Both" OnDataBound="Kul_bilgileri_form_DataBound" Width="221px" Height="140px" CssClass="auto-style17">
                                 <EditItemTemplate>
                                     yemek_id:
                                     <asp:Label ID="yemek_idLabel1" runat="server" Text='<%# Eval("yemek_id") %>' />
@@ -169,12 +169,19 @@
                                     &nbsp;<asp:LinkButton ID="InsertCancelButton" runat="server" CausesValidation="False" CommandName="Cancel" Text="Cancel" />
                                 </InsertItemTemplate>
                                 <ItemTemplate>
-                                    yemek_id:&nbsp;<asp:Label ID="yemek_idLabel" runat="server" Text='<%# Eval("yemek_id") %>' />
-                                    <br />yemek_adi:&nbsp;<asp:Label ID="yemek_adiLabel" runat="server" Text='<%# Bind("yemek_adi") %>' />
-                                    <br />yemek_fiyati:&nbsp;<asp:Label ID="yemek_fiyatiLabel" runat="server" Text='<%# Bind("yemek_fiyati") %>' />
-                                    <br />yemek_icerigi:
+                                    yemek_id:
+                                    <asp:Label ID="yemek_idLabel" runat="server" Text='<%# Eval("yemek_id") %>' />
+                                    <br />
+                                    yemek_adi:
+                                    <asp:Label ID="yemek_adiLabel" runat="server" Text='<%# Bind("yemek_adi") %>' />
+                                    <br />
+                                    yemek_fiyati:
+                                    <asp:Label ID="yemek_fiyatiLabel" runat="server" Text='<%# Bind("yemek_fiyati") %>' />
+                                    <br />
+                                    yemek_icerigi:
                                     <asp:Label ID="yemek_icerigiLabel" runat="server" Text='<%# Bind("yemek_icerigi") %>' />
-                                    <br /><asp:LinkButton ID="EditButton" runat="server" CausesValidation="False" CommandName="Edit" Text="Edit" />
+                                    <br />
+                                    <asp:LinkButton ID="EditButton" runat="server" CausesValidation="False" CommandName="Edit" Text="Edit" />
                                     &nbsp;<asp:LinkButton ID="DeleteButton" runat="server" CausesValidation="False" CommandName="Delete" Text="Delete" />
                                     &nbsp;<asp:LinkButton ID="NewButton" runat="server" CausesValidation="False" CommandName="New" Text="New" />
                                 </ItemTemplate>
@@ -236,7 +243,7 @@
 
                                 <br />
 
-                            <asp:FormView align="center" ID="Eski_sip_form" runat="server" CellPadding="3" DataKeyNames="eski_siparis_id" DataSourceID="Eski_sip_sql" BackColor="#DEBA84" BorderColor="#DEBA84" BorderStyle="None" BorderWidth="1px" CellSpacing="2" GridLines="Both" Height="111px" Width="221px" CssClass="auto-style17">
+                            <asp:FormView align="center" ID="Eski_sip_form" runat="server" CellPadding="3" DataKeyNames="eski_siparis_id" DataSourceID="SqlDataSource3" BackColor="#DEBA84" BorderColor="#DEBA84" BorderStyle="None" BorderWidth="1px" CellSpacing="2" GridLines="Both" Height="111px" Width="221px" CssClass="auto-style17">
                                 <EditItemTemplate>
                                     eski_siparis_id:
                                     <asp:Label ID="eski_siparis_idLabel1" runat="server" Text='<%# Eval("eski_siparis_id") %>' />
@@ -247,21 +254,21 @@
                                     yemek_id:
                                     <asp:TextBox ID="yemek_idTextBox" runat="server" Text='<%# Bind("yemek_id") %>' />
                                     <br />
-                                    <asp:LinkButton ID="UpdateButton" runat="server" CausesValidation="True" CommandName="Update" Text="Güncelleştir" />
-                                    &nbsp;<asp:LinkButton ID="UpdateCancelButton" runat="server" CausesValidation="False" CommandName="Cancel" Text="İptal" />
+                                    <asp:LinkButton ID="UpdateButton" runat="server" CausesValidation="True" CommandName="Update" Text="Update" />
+                                    &nbsp;<asp:LinkButton ID="UpdateCancelButton" runat="server" CausesValidation="False" CommandName="Cancel" Text="Cancel" />
                                 </EditItemTemplate>
                                 <EditRowStyle BackColor="#738A9C" Font-Bold="True" ForeColor="White" />
                                 <FooterStyle BackColor="#F7DFB5" ForeColor="#8C4510" />
                                 <HeaderStyle BackColor="#A55129" Font-Bold="True" ForeColor="White" />
                                 <InsertItemTemplate>
                                     kullanici_id:
-                                    <asp:TextBox ID="kullanici_idTextBox0" runat="server" Text='<%# Bind("kullanici_id") %>' />
+                                    <asp:TextBox ID="kullanici_idTextBox" runat="server" Text='<%# Bind("kullanici_id") %>' />
                                     <br />
                                     yemek_id:
-                                    <asp:TextBox ID="yemek_idTextBox0" runat="server" Text='<%# Bind("yemek_id") %>' />
+                                    <asp:TextBox ID="yemek_idTextBox" runat="server" Text='<%# Bind("yemek_id") %>' />
                                     <br />
-                                    <asp:LinkButton ID="InsertButton" runat="server" CausesValidation="True" CommandName="Insert" Text="Ekle" />
-                                    &nbsp;<asp:LinkButton ID="InsertCancelButton" runat="server" CausesValidation="False" CommandName="Cancel" Text="İptal" />
+                                    <asp:LinkButton ID="InsertButton" runat="server" CausesValidation="True" CommandName="Insert" Text="Insert" />
+                                    &nbsp;<asp:LinkButton ID="InsertCancelButton" runat="server" CausesValidation="False" CommandName="Cancel" Text="Cancel" />
                                 </InsertItemTemplate>
                                 <ItemTemplate>
                                     eski_siparis_id:
@@ -273,9 +280,9 @@
                                     yemek_id:
                                     <asp:Label ID="yemek_idLabel" runat="server" Text='<%# Bind("yemek_id") %>' />
                                     <br />
-                                    <asp:LinkButton ID="EditButton" runat="server" CausesValidation="False" CommandName="Edit" Text="Düzenle" />
-                                    &nbsp;<asp:LinkButton ID="DeleteButton" runat="server" CausesValidation="False" CommandName="Delete" Text="Sil" />
-                                    &nbsp;<asp:LinkButton ID="NewButton" runat="server" CausesValidation="False" CommandName="New" Text="Yeni" />
+                                    <asp:LinkButton ID="EditButton" runat="server" CausesValidation="False" CommandName="Edit" Text="Edit" />
+                                    &nbsp;<asp:LinkButton ID="DeleteButton" runat="server" CausesValidation="False" CommandName="Delete" Text="Delete" />
+                                    &nbsp;<asp:LinkButton ID="NewButton" runat="server" CausesValidation="False" CommandName="New" Text="New" />
                                 </ItemTemplate>
                                 <PagerStyle ForeColor="#8C4510" HorizontalAlign="Center" />
                                 <RowStyle BackColor="#FFF7E7" ForeColor="#8C4510" />
@@ -549,7 +556,25 @@
             </asp:SqlDataSource>
 
 
-                            <asp:SqlDataSource ID="SqlDataSource3" runat="server" ConnectionString="<%$ ConnectionStrings:Ozak_ErciyasConnectionString2 %>" DeleteCommand="DELETE FROM [Yemek_menü] WHERE [yemek_id] = @yemek_id" InsertCommand="INSERT INTO [Yemek_menü] ([yemek_adi], [yemek_fiyati], [yemek_icerigi]) VALUES (@yemek_adi, @yemek_fiyati, @yemek_icerigi)" SelectCommand="SELECT * FROM [Yemek_menü] WHERE ([yemek_id] = @yemek_id)" UpdateCommand="UPDATE [Yemek_menü] SET [yemek_adi] = @yemek_adi, [yemek_fiyati] = @yemek_fiyati, [yemek_icerigi] = @yemek_icerigi WHERE [yemek_id] = @yemek_id">
+                            <asp:SqlDataSource ID="SqlDataSource3" runat="server" ConnectionString="<%$ ConnectionStrings:Ozak_ErciyasConnectionString2 %>" DeleteCommand="DELETE FROM [Gecmis_siparisler] WHERE [eski_siparis_id] = @eski_siparis_id" InsertCommand="INSERT INTO [Gecmis_siparisler] ([kullanici_id], [yemek_id]) VALUES (@kullanici_id, @yemek_id)" SelectCommand="SELECT * FROM [Gecmis_siparisler] WHERE ([eski_siparis_id] = @eski_siparis_id)" UpdateCommand="UPDATE [Gecmis_siparisler] SET [kullanici_id] = @kullanici_id, [yemek_id] = @yemek_id WHERE [eski_siparis_id] = @eski_siparis_id">
+                                <DeleteParameters>
+                                    <asp:Parameter Name="eski_siparis_id" Type="Int32" />
+                                </DeleteParameters>
+                                <InsertParameters>
+                                    <asp:Parameter Name="kullanici_id" Type="Int32" />
+                                    <asp:Parameter Name="yemek_id" Type="Int32" />
+                                </InsertParameters>
+                                <SelectParameters>
+                                    <asp:ControlParameter ControlID="Eski_Siparisler" Name="eski_siparis_id" PropertyName="SelectedValue" Type="Int32" />
+                                </SelectParameters>
+                                <UpdateParameters>
+                                    <asp:Parameter Name="kullanici_id" Type="Int32" />
+                                    <asp:Parameter Name="yemek_id" Type="Int32" />
+                                    <asp:Parameter Name="eski_siparis_id" Type="Int32" />
+                                </UpdateParameters>
+                            </asp:SqlDataSource>
+                            <asp:SqlDataSource ID="SqlDataSource4" runat="server"></asp:SqlDataSource>
+                            <asp:SqlDataSource ID="SqlDataSource6" runat="server" ConnectionString="<%$ ConnectionStrings:Ozak_ErciyasConnectionString2 %>" DeleteCommand="DELETE FROM [Yemek_menü] WHERE [yemek_id] = @yemek_id" InsertCommand="INSERT INTO [Yemek_menü] ([yemek_adi], [yemek_fiyati], [yemek_icerigi]) VALUES (@yemek_adi, @yemek_fiyati, @yemek_icerigi)" SelectCommand="SELECT * FROM [Yemek_menü] WHERE ([yemek_id] = @yemek_id)" UpdateCommand="UPDATE [Yemek_menü] SET [yemek_adi] = @yemek_adi, [yemek_fiyati] = @yemek_fiyati, [yemek_icerigi] = @yemek_icerigi WHERE [yemek_id] = @yemek_id">
                                 <DeleteParameters>
                                     <asp:Parameter Name="yemek_id" Type="Int32" />
                                 </DeleteParameters>
@@ -568,8 +593,6 @@
                                     <asp:Parameter Name="yemek_id" Type="Int32" />
                                 </UpdateParameters>
                             </asp:SqlDataSource>
-                            <asp:SqlDataSource ID="SqlDataSource4" runat="server"></asp:SqlDataSource>
-                            <asp:SqlDataSource ID="SqlDataSource6" runat="server"></asp:SqlDataSource>
                             <asp:SqlDataSource ID="SqlDataSource5" runat="server"></asp:SqlDataSource>
                         </td>
                     </tr>
