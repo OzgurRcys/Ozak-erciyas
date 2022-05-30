@@ -21,19 +21,22 @@
             width: 973px;
         }
         .auto-style11 {
-            width: 328px;
+            width: 760px;
             height: 344px;
         }
         .auto-style14 {
-            width: 456px;
+            width: 720px;
             height: 344px;
         }
         .auto-style15 {
-            width: 456px;
+            width: 720px;
         }
         .auto-style16 {
             height: 221px;
-            width: 456px;
+            width: 720px;
+        }
+        .auto-style17 {
+            margin-left: 0px;
         }
         </style>
 </head>
@@ -57,7 +60,7 @@
                         <td class="auto-style14">
 
 
-                            <asp:FormView ID="Kul_bilgileri_form" runat="server" BackColor="#DEBA84" BorderColor="#DEBA84" BorderStyle="None" BorderWidth="1px" CellPadding="3" CellSpacing="2" DataKeyNames="kullanici_id" DataSourceID="Kul_bil_form_sql" GridLines="Both" OnDataBound="Kul_bilgileri_form_DataBound">
+                            <asp:FormView align="center" ID="Kul_bilgileri_form" runat="server" BackColor="#DEBA84" BorderColor="#DEBA84" BorderStyle="None" BorderWidth="1px" CellPadding="3" CellSpacing="2" DataKeyNames="kullanici_id" DataSourceID="Kul_bil_form_sql" GridLines="Both" OnDataBound="Kul_bilgileri_form_DataBound" Height="227px" Width="272px" CssClass="auto-style17">
                                 <EditItemTemplate>
                                     kullanici_id:
                                     <asp:Label ID="kullanici_idLabel1" runat="server" Text='<%# Eval("kullanici_id") %>' />
@@ -130,9 +133,9 @@
                                 <RowStyle BackColor="#FFF7E7" ForeColor="#8C4510" />
                             </asp:FormView>
                                                                         
-                            <td class="auto-style11">
+                            <br />
 
-                            <asp:FormView ID="Menu_bilgileri_form" runat="server" BackColor="#DEBA84" BorderColor="#DEBA84" BorderStyle="None" BorderWidth="1px" CellPadding="3" CellSpacing="2" DataKeyNames="yemek_id" DataSourceID="SqlDataSource3" GridLines="Both" OnDataBound="Kul_bilgileri_form_DataBound" Width="124px">
+                            <asp:FormView align="center" ID="Menu_bilgileri_form" runat="server" BackColor="#DEBA84" BorderColor="#DEBA84" BorderStyle="None" BorderWidth="1px" CellPadding="3" CellSpacing="2" DataKeyNames="yemek_id" DataSourceID="SqlDataSource3" GridLines="Both" OnDataBound="Kul_bilgileri_form_DataBound" Width="221px" Height="140px" CssClass="auto-style17">
                                 <EditItemTemplate>
                                     yemek_id:
                                     <asp:Label ID="yemek_idLabel1" runat="server" Text='<%# Eval("yemek_id") %>' />
@@ -180,7 +183,13 @@
                             </asp:FormView>
                         
                         
-                            <asp:FormView ID="Sepet_form" runat="server" CellPadding="3" DataKeyNames="yeni_siparis_id" DataSourceID="Sepet_sql" BackColor="#DEBA84" BorderColor="#DEBA84" BorderStyle="None" BorderWidth="1px" CellSpacing="2" GridLines="Both">
+                                <td class="auto-style11">
+
+                        
+                                <br />
+                        
+                        
+                            <asp:FormView align="center" ID="Sepet_form" runat="server" CellPadding="3" DataKeyNames="yeni_siparis_id" DataSourceID="Sepet_sql" BackColor="#DEBA84" BorderColor="#DEBA84" BorderStyle="None" BorderWidth="1px" CellSpacing="2" GridLines="Both" Height="123px" Width="222px" CssClass="auto-style17">
                                 <EditItemTemplate>
                                     yeni_siparis_id:
                                     <asp:Label ID="yeni_siparis_idLabel1" runat="server" Text='<%# Eval("yeni_siparis_id") %>' />
@@ -225,7 +234,9 @@
                                 <RowStyle BackColor="#FFF7E7" ForeColor="#8C4510" />
                             </asp:FormView>
 
-                            <asp:FormView ID="Eski_sip_form" runat="server" CellPadding="3" DataKeyNames="eski_siparis_id" DataSourceID="Eski_sip_sql" BackColor="#DEBA84" BorderColor="#DEBA84" BorderStyle="None" BorderWidth="1px" CellSpacing="2" GridLines="Both">
+                                <br />
+
+                            <asp:FormView align="center" ID="Eski_sip_form" runat="server" CellPadding="3" DataKeyNames="eski_siparis_id" DataSourceID="Eski_sip_sql" BackColor="#DEBA84" BorderColor="#DEBA84" BorderStyle="None" BorderWidth="1px" CellSpacing="2" GridLines="Both" Height="111px" Width="221px" CssClass="auto-style17">
                                 <EditItemTemplate>
                                     eski_siparis_id:
                                     <asp:Label ID="eski_siparis_idLabel1" runat="server" Text='<%# Eval("eski_siparis_id") %>' />
@@ -313,7 +324,7 @@
             <asp:GridView ID="Eski_Siparisler" runat="server" AutoGenerateColumns="False" DataKeyNames="eski_siparis_id" DataSourceID="Eski_sip_sql" Height="5px" Width="5px" AllowSorting="True" CellPadding="4" ForeColor="#333333" GridLines="None">
                 <AlternatingRowStyle BackColor="White" />
                 <Columns>
-                    <asp:CommandField ShowSelectButton="True" ShowEditButton="True" />
+                    <asp:CommandField ShowSelectButton="True" />
                     <asp:BoundField DataField="eski_siparis_id" HeaderText="eski_siparis_id" InsertVisible="False" ReadOnly="True" SortExpression="eski_siparis_id" />
                     <asp:BoundField DataField="kullanici_id" HeaderText="kullanici_id" SortExpression="kullanici_id" />
                     <asp:BoundField DataField="yemek_id" HeaderText="yemek_id" SortExpression="yemek_id" />
