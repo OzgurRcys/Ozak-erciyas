@@ -1,5 +1,4 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site1.Master" AutoEventWireup="true" CodeBehind="giris.aspx.cs" Inherits="Web_Tab_Proje.WebForm5" %>
-
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site1.Master" AutoEventWireup="true" CodeBehind="Admin_giris_panel.aspx.cs" Inherits="Web_Tab_Proje.Admin_giris_panel" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
@@ -13,7 +12,7 @@
                             <div class="row justify-content-center">
                                 <div class="col-md-10 col-lg-6 col-xl-5 order-2 order-lg-1">
 
-                                    <p class="text-center h1 fw-bold mb-5 mx-1 mx-md-4 mt-4">Giriş Yap</p>
+                                    <p class="text-center h1 fw-bold mb-5 mx-1 mx-md-4 mt-4">Yönetici Girişi Yap</p>
 
                                     <form>
                                         <!-- Email input -->
@@ -43,9 +42,8 @@
                                         <!-- Register buttons -->
                                         <asp:Button class="btn btn-primary btn-lg" ID="Button1" runat="server" OnClick="Button1_Click" Text="Giriş Yap" />
                                         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                                        <asp:Button class="btn btn-primary btn-lg" ID="Button_Yonetici_giris" runat="server" OnClick="Button_Yonetici_giris_Click" Text="Yönetici Girişi Yap" Width="165px" />
                                         <div class="text-center">
-                                            <p>Kayıtlı hesabınız yok mu? <a href="kayit_ol.aspx">Buradan kayıt olabilirsiniz</a></p>
+                                            <p>&nbsp;</p>
                                         </div>
                                     </form>
 

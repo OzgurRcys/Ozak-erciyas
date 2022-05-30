@@ -11,7 +11,7 @@ namespace Web_Tab_Proje
 {
 
 
-    public partial class WebForm5
+    public partial class Admin_giris_panel
     {
 
         /// <summary>
@@ -40,14 +40,5 @@ namespace Web_Tab_Proje
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Button Button1;
-
-        /// <summary>
-        /// Button_Yonetici_giris control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Button Button_Yonetici_giris;
     }
 }

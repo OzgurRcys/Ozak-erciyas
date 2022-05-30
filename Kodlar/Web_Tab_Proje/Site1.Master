@@ -13,78 +13,81 @@
     <link href="css/bootstrap.css" rel="stylesheet" />
     <link href="css/background.css" rel="stylesheet" />
 
-   
-    <style>
 
-
-        .auto-style1 {
-            height: 172px;
-        }
-        .auto-style2 {
-            width: 100%;
-            height: 170px;
-            margin-left: auto;
-            margin-right: auto;
-            padding-left: var(--bs-gutter-x, 0.75rem);
-            padding-right: var(--bs-gutter-x, 0.75rem);
-        }
-    </style>
     <asp:ContentPlaceHolder ID="head" runat="server">
     </asp:ContentPlaceHolder>
 </head>
 <body>
-    
+
     <script src="js/bootstrap.bundle.js"></script>
 
-    <div class="container-fluid" style="background-color: crimson">
-        <ul class="nav nav-pills">
-            <li class="nav-item">
-                <a class="nav-link "href="index.aspx">HAKKIMIZDA</a> 
-            </li>
 
-            <li class="nav-item">
-                <a class="nav-link" href="Menu.aspx">MENÜ</a>
-                
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="iletisim.aspx">BİZE ULAŞIN</a>
-            </li>
 
-            <li class="nav-item">
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Dropdown</a>
-                    <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="giris.aspx">GİRİŞ YAP</a></li>
-                        <li><a class="dropdown-item" href="sepet.aspx">SEPETİM</a></li>
-                        <!--    <hr class="dropdown-divider"> drop down ayırma kısmı -->
 
-                    </ul>
-                </li>
-            </li>
-        </ul>
-        </div>
-   
-    
-    
-        
-    
+
 
 
     <form id="form1" runat="server">
-       
-        
 
-       
-            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
-               
 
-            </asp:ContentPlaceHolder>
 
-          </form>
-         
-        
-       
 
-    
+        <div class="container-fluid" style="background-color: crimson">
+            <ul class="nav nav-pills">
+                <li class="nav-item">
+                    <asp:Button class="nav-link" ID="Button1" runat="server" Text="Hakkımızda" Height="35px" Width="162px" OnClick="Button1_Click" />
+                </li>
+                <li class="nav-item">
+                    <asp:Button class="nav-link" ID="Button4" runat="server" Text="Menü" Height="29px" Width="178px" OnClick="Button4_Click" />
+                </li>
+
+                <li class="nav-item">
+
+                    <asp:Button class="nav-link" ID="Button2" runat="server" Text="Bize Ulaşın" Height="38px" Width="185px" OnClick="Button2_Click" />
+                </li>
+                <li class="nav-item">
+                    <li class="nav-item dropdown" style="left: 0px; top: 0px; height: 26px">
+                        <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">HESAP İŞLEMLERİ</a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <asp:Button class="dropdown-item" ID="Button3" runat="server" Text="YÖNETİCİ GİRİŞİ YAP" OnClick="Button3_Click" /></li>
+
+                            <li>
+                                <asp:Button class="dropdown-item" ID="Button5" runat="server" Text="GİRİŞ YAP" OnClick="Button5_Click" /></li>
+
+                            <li>
+                                <asp:Button class="dropdown-item" ID="Button6" runat="server" Text="KAYIT OL" OnClick="Button6_Click" /></li>
+
+                            <li>
+                                <asp:Button class="dropdown-item" ID="Button7" runat="server" Text="SEPETİM" OnClick="Button7_Click" /></li>
+                            <li>
+                                <asp:Button class="dropdown-item" ID="Button8" runat="server" Text="YÖNETİCİ PANELİ" OnClick="Button8_Click" /></li>
+                            <li>
+                                <asp:Button class="dropdown-item" ID="Button9" runat="server" Text="ÇIKIŞ YAP" OnClick="Button9_Click" /></li>
+
+                            <!--    <hr class="dropdown-divider"> drop down ayırma kısmı -->
+
+                        </ul>
+                    </li>
+                </li>
+
+            </ul>
+        </div>
+
+
+
+
+
+
+
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+        </asp:ContentPlaceHolder>
+
+    </form>
+
+
+
+
+
 </body>
 </html>

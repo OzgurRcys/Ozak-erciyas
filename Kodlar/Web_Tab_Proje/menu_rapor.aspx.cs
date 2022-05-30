@@ -15,6 +15,23 @@ namespace Web_Tab_Proje
     {
         protected void Page_Load(object sender, EventArgs e)
         {
+
+
+            if (Session["role"] == null)
+            {
+                Response.Redirect("index.aspx");
+            }
+            else if (Session["role"].Equals("Kullanici"))
+            {
+                Response.Redirect("index.aspx");
+            }
+            else if (Session["role"].Equals("Yonetici"))
+            {
+
+
+            }
+
+
             if (!this.IsPostBack)
             {
                 string sql_string = "SELECT Yemek_menü.*, Yemek_turleri.*FROM Yemek_menü INNER JOIN Yemek_kategori ON Yemek_menü.yemek_id = Yemek_kategori.yemek_id INNER JOIN Yemek_turleri ON Yemek_kategori.yemek_turu_id = Yemek_turleri.yemek_turu_id";

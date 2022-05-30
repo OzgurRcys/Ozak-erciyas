@@ -15,6 +15,22 @@ namespace Web_Tab_Proje
 	{
 		protected void Page_Load(object sender, EventArgs e)
 		{
+
+            if (Session["role"] == null)
+            {
+                Response.Redirect("index.aspx");
+            }
+            else if (Session["role"].Equals("Kullanici"))
+            {
+                Response.Redirect("index.aspx");
+            }
+            else if (Session["role"].Equals("Yonetici"))
+            {
+
+
+            }
+
+
             if (!this.IsPostBack)
             {
                 string sql_string = "SELECT kullanici_id, kullanici_adi, kullanici_soyadi, kullanici_telefon, kullanici_mail, kullanici_sifre FROM Kullanici_bilgi_tablosu";
