@@ -43,8 +43,9 @@
                                         <!-- Register buttons -->
                                         <asp:Button class="btn btn-primary btn-lg" ID="Button1" runat="server" OnClick="Button1_Click" Text="Giriş Yap" />
                                         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                                        <asp:Button class="btn btn-primary btn-lg" ID="Button_Yonetici_giris" runat="server" OnClick="Button_Yonetici_giris_Click" Text="Yönetici Girişi Yap" Width="165px" />
+                                        <asp:Button class="btn btn-primary btn-lg" ID="Button_Yonetici_giris" runat="server" OnClick="Button_Yonetici_giris_Click" Text="Yönetici Girişi " Width="160px" />
                                         <div class="text-center">
+                                            <p>&nbsp;</p>
                                             <p>Kayıtlı hesabınız yok mu? <a href="kayit_ol.aspx">Buradan kayıt olabilirsiniz</a></p>
                                         </div>
                                     </form>

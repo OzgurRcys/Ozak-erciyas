@@ -215,10 +215,10 @@
                                 <HeaderStyle BackColor="#A55129" Font-Bold="True" ForeColor="White" />
                                 <InsertItemTemplate>
                                     yemek_id:
-                                    <asp:TextBox ID="yemek_idTextBox0" runat="server" Text='<%# Bind("yemek_id") %>' />
+                                    <asp:TextBox ID="yemek_idTextBox" runat="server" Text='<%# Bind("yemek_id") %>' />
                                     <br />
                                     kullanıcı_id:
-                                    <asp:TextBox ID="kullanıcı_idTextBox0" runat="server" Text='<%# Bind("kullanıcı_id") %>' />
+                                    <asp:TextBox ID="kullanıcı_idTextBox" runat="server" Text='<%# Bind("kullanıcı_id") %>' />
                                     <br />
                                     <asp:LinkButton ID="InsertButton" runat="server" CausesValidation="True" CommandName="Insert" Text="Ekle" />
                                     &nbsp;<asp:LinkButton ID="InsertCancelButton" runat="server" CausesValidation="False" CommandName="Cancel" Text="İptal" />
@@ -300,13 +300,13 @@
                 <AlternatingRowStyle BackColor="White" />
                 <Columns>
                     <asp:CommandField ShowSelectButton="True" />
-                    <asp:BoundField DataField="kullanici_id" HeaderText="kullanici_id" InsertVisible="False" ReadOnly="True" SortExpression="kullanici_id" />
-                    <asp:BoundField DataField="kullanici_adi" HeaderText="kullanici_adi" SortExpression="kullanici_adi" />
-                    <asp:BoundField DataField="kullanici_soyadi" HeaderText="kullanici_soyadi" SortExpression="kullanici_soyadi" />
-                    <asp:BoundField DataField="kullanici_telefon" HeaderText="kullanici_telefon" SortExpression="kullanici_telefon" />
-                    <asp:BoundField DataField="IsAdmin" HeaderText="IsAdmin" SortExpression="IsAdmin" />
-                    <asp:BoundField DataField="kullanici_mail" HeaderText="kullanici_mail" SortExpression="kullanici_mail" />
-                    <asp:BoundField DataField="kullanici_sifre" HeaderText="kullanici_sifre" SortExpression="kullanici_sifre" />
+                    <asp:BoundField DataField="kullanici_id" HeaderText="Kullanıcı Id" InsertVisible="False" ReadOnly="True" SortExpression="kullanici_id" />
+                    <asp:BoundField DataField="kullanici_adi" HeaderText="Adı" SortExpression="kullanici_adi" />
+                    <asp:BoundField DataField="kullanici_soyadi" HeaderText="Soyadı" SortExpression="kullanici_soyadi" />
+                    <asp:BoundField DataField="kullanici_telefon" HeaderText="Telefon Numarası" SortExpression="kullanici_telefon" />
+                    <asp:BoundField DataField="IsAdmin" HeaderText="Admin " SortExpression="IsAdmin" />
+                    <asp:BoundField DataField="kullanici_mail" HeaderText="Mail" SortExpression="kullanici_mail" />
+                    <asp:BoundField DataField="kullanici_sifre" HeaderText="Sifre" SortExpression="kullanici_sifre" />
                 </Columns>
                 <EditRowStyle BackColor="#2461BF" />
                 <FooterStyle BackColor="#507CD1" Font-Bold="True" ForeColor="White" />
@@ -331,7 +331,7 @@
             <asp:GridView ID="Eski_Siparisler" runat="server" AutoGenerateColumns="False" DataKeyNames="eski_siparis_id" DataSourceID="Eski_sip_sql" Height="5px" Width="5px" AllowSorting="True" CellPadding="4" ForeColor="#333333" GridLines="None">
                 <AlternatingRowStyle BackColor="White" />
                 <Columns>
-                    <asp:CommandField ShowSelectButton="True" />
+                    <asp:CommandField ShowDeleteButton="True" ShowEditButton="True" ShowSelectButton="True" />
                     <asp:BoundField DataField="eski_siparis_id" HeaderText="eski_siparis_id" InsertVisible="False" ReadOnly="True" SortExpression="eski_siparis_id" />
                     <asp:BoundField DataField="kullanici_id" HeaderText="kullanici_id" SortExpression="kullanici_id" />
                     <asp:BoundField DataField="yemek_id" HeaderText="yemek_id" SortExpression="yemek_id" />
@@ -356,7 +356,7 @@
             <asp:GridView ID="Sepet_bil" runat="server" AutoGenerateColumns="False" DataKeyNames="yeni_siparis_id" DataSourceID="Sepet_sql" AllowSorting="True" CellPadding="4" ForeColor="#333333" GridLines="None">
                 <AlternatingRowStyle BackColor="White" />
                 <Columns>
-                    <asp:CommandField ShowSelectButton="True" ShowDeleteButton="True" ShowEditButton="True" />
+                    <asp:CommandField ShowDeleteButton="True" ShowEditButton="True" ShowSelectButton="True" />
                     <asp:BoundField DataField="yeni_siparis_id" HeaderText="yeni_siparis_id" InsertVisible="False" ReadOnly="True" SortExpression="yeni_siparis_id" />
                     <asp:BoundField DataField="yemek_id" HeaderText="yemek_id" SortExpression="yemek_id" />
                     <asp:BoundField DataField="kullanıcı_id" HeaderText="kullanıcı_id" SortExpression="kullanıcı_id" />
@@ -386,10 +386,10 @@
                 <AlternatingRowStyle BackColor="White" />
                 <Columns>
                     <asp:CommandField ShowSelectButton="True" />
-                    <asp:BoundField DataField="yemek_id" HeaderText="yemek_id" InsertVisible="False" ReadOnly="True" SortExpression="yemek_id" />
-                    <asp:BoundField DataField="yemek_adi" HeaderText="yemek_adi" SortExpression="yemek_adi" />
-                    <asp:BoundField DataField="yemek_fiyati" HeaderText="yemek_fiyati" SortExpression="yemek_fiyati" />
-                    <asp:BoundField DataField="yemek_icerigi" HeaderText="yemek_icerigi" SortExpression="yemek_icerigi" />
+                    <asp:BoundField DataField="yemek_id" HeaderText="yemek id" InsertVisible="False" ReadOnly="True" SortExpression="yemek_id" />
+                    <asp:BoundField DataField="yemek_adi" HeaderText="Yemek Adı" SortExpression="yemek_adi" />
+                    <asp:BoundField DataField="yemek_fiyati" HeaderText="Yemek Fiyatı" SortExpression="yemek_fiyati" />
+                    <asp:BoundField DataField="yemek_icerigi" HeaderText="Yemek içeriği" SortExpression="yemek_icerigi" />
                 </Columns>
                 <EditRowStyle BackColor="#2461BF" />
                 <FooterStyle BackColor="#507CD1" Font-Bold="True" ForeColor="White" />

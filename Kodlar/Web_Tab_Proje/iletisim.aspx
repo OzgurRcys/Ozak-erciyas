@@ -1,34 +1,20 @@
 ﻿<%@ Page Title="BİZE ULAŞIN" Language="C#" MasterPageFile="~/Site1.Master" AutoEventWireup="true"
     CodeBehind="iletisim.aspx.cs" Inherits="Web_Tab_Proje.iletisim" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
-    <style type="text/css">
-        
-        .auto-style3 {
-            margin-right: 0;
-        }
-        
-    </style>
-</asp:Content>
+    </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <br />
     <div align="center">
-    <asp:TextBox  ID="TextBox1" runat="server" Height="20px" Width="224px" BorderStyle="None">ÖZAK-ERCİYAS RESTORAN</asp:TextBox>
+        <asp:Label ID="Label1" runat="server" ForeColor="White" Text="ÖZAK-ERCİYAS RESTORAN"></asp:Label>
        <br />
     <br/>
     
-        <asp:TextBox ID="TextBox2" runat="server" Height="28px" Width="911px" BorderStyle="None">ADRES:
-Bartın Üniversitesi 
-Mühendislik Mimarlık Fakültesi 
-74110 Kutlubeyyazıcılar 
-Bartın Merkez 
-Bartın</asp:TextBox>
+        <asp:Label ID="Label2" runat="server" ForeColor="White" Text="Adres : Bartin Universitesi Mühendislik Mimarlık Fakültesi 74110 Kutlubey Yazıcılar Bartın Merkez /bartın"></asp:Label>
         <br />
        <br />
- <asp:TextBox ID="TextBox3" runat="server" CssClass="auto-style3" Height="27px" Width="269px" BorderStyle="None">İLETİŞİM:
-0 (378) 555 55 55
-</asp:TextBox>
-       <asp:TextBox ID="TextBox4" runat="server" CssClass="auto-style3" Height="27px" Width="268px" BorderStyle="None">
-ozak-erciyas@restaurant.com</asp:TextBox>
+        <asp:Label ID="Label3" runat="server" ForeColor="White" Text="İLETİŞİM: 0 (378) 531 28 61"></asp:Label>
+&nbsp;&nbsp;
+        <asp:Label ID="Label4" runat="server" ForeColor="White" Text="ozak-erciyas@restaurant.com"></asp:Label>
 
         <br/>
     <br/>
