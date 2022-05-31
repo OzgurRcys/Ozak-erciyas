@@ -29,7 +29,7 @@
 
                                         <!-- Password input -->
                                         <div class="form-outline mb-4">
-                                            <asp:TextBox class="form-control" ID="Txt_Giris_Sifre" runat="server" Width="373px"></asp:TextBox>
+                                            <asp:TextBox class="form-control" ID="Txt_Giris_Sifre" runat="server" Width="373px" TextMode="Password"></asp:TextBox>
 
                                             &nbsp;
       <br />

@@ -9,7 +9,7 @@ using System.Data.SqlClient;
 using System.Data;
 namespace Web_Tab_Proje
 {
-   
+
 
     public partial class WebForm4 : System.Web.UI.Page
     {
@@ -18,18 +18,40 @@ namespace Web_Tab_Proje
 
         protected void Page_Load(object sender, EventArgs e)
         {
+
+           
+
             if (Session["Kullanici_ID"] == null)
             {
                 Label1.Text = null;
+                Button10.Visible = false;
+                Response.Write("<script>alert('Sepetinizi görebilmek için giriş yapmalısınız');</script>");
+                
             }
             else
             {
                 Label1.Text = Session["Kullanici_ID"].ToString().Trim();
+                SqlConnection con = new SqlConnection(strcon);
+                if (con.State == System.Data.ConnectionState.Closed)
+                {
+                    con.Open();
+                }
+                SqlCommand cmd = new SqlCommand("SELECT * from Sepet_tablosu where kullanıcı_id='" + Session["Kullanici_ID"] + "'", con);
+                SqlDataReader dr = cmd.ExecuteReader();
 
+                if (dr.HasRows)
+                {
+                }
+
+                else
+                {
+                    Button10.Visible = false;
+                    Response.Write("<script>alert('Sepetiniz Boştur');</script>");
+                }
             }
 
         }
-       
+
         protected void Button10_Click(object sender, EventArgs e)
         {
             try
@@ -40,7 +62,7 @@ namespace Web_Tab_Proje
                     con.Open();
                 }
                 SqlCommand cmd = new SqlCommand("INSERT INTO Gecmis_siparisler(kullanici_id,yemek_id)SELECT kullanıcı_id,yemek_id FROM Sepet_tablosu; DELETE FROM Sepet_tablosu;", con);
-                
+
                 cmd.ExecuteNonQuery();
                 con.Close();
 

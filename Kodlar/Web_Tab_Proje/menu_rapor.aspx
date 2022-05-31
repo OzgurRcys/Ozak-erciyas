@@ -13,7 +13,9 @@
     <br />    
     <br />
     <br />
+    <div align="center">
 <rsweb:ReportViewer ID="ReportViewer1" runat="server" Width="1232px">
-    </rsweb:ReportViewer>
 
+    </rsweb:ReportViewer>
+        </div>
 </asp:Content>

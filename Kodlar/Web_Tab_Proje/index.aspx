@@ -34,9 +34,9 @@
     
 Birlikte geçen uzun bir çalışma döneminin ardından ortaklar yollarını ayırdı ve Onur Usta 1998' e kadar kendi işletmesini çalıştırmaya devam etti. 
        
-1998'den sonra ise Onur Usta yerini mesleki eğitim ve terbiye ile yetiştirdiği oğlu MERT AKGÜL'a bıraktı.
+1998'den sonra ise Onur Usta yerini mesleki eğitim ve terbiye ile yetiştirdiği oğlu Mert Akgül'a bıraktı.
       
-Bugün gelenekten, geleceğe felsefesiyle bayrağı devir alan MERT ustanın kızı BEYZA AKGÜL Özak Erciyas ismi ve kalitesiyle faaliyetlerine devam etmektedir.
+Bugün gelenekten, geleceğe felsefesiyle bayrağı devir alan Mert ustanın kızı Beyza Akgül Özak Erciyas ismi ve kalitesiyle faaliyetlerine devam etmektedir.
         </p>
 
         <div margin="100px">
