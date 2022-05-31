@@ -12,19 +12,18 @@
               <div class="col-md-10 col-lg-6 col-xl-5 order-2 order-lg-1" >
 
                 <p class="text-center h1 fw-bold mb-5 mx-1 mx-md-4 mt-4">Kayıt ol</p>
-
+                  <div align="center">
                 <form class="mx-1 mx-md-4">
 
                   <div class="d-flex flex-row align-items-center mb-4">
                     <i class="fas fa-user fa-lg me-3 fa-fw"></i>
                     <div class="form-outline flex-fill mb-0">
+
                        &nbsp;<label class="form-label" for="form3Example1c">Adınız<asp:TextBox  class="form-control" ID="Txt_Ad" runat="server" Width="373px"></asp:TextBox>
+                        
                         </label>
+                        &nbsp;<br />
                         <br />
-                        <br />
-                       <label class="form-label" for="form3Example1c">
-                        <asp:TextBox  class="form-control" ID="Txt_Soyad" runat="server" Width="373px"></asp:TextBox>
-                        </label>
                     </div>
                   </div>
 
@@ -32,12 +31,10 @@
                     <div class="d-flex flex-row align-items-center mb-4">
                     <i class="fas fa-user fa-lg me-3 fa-fw"></i>
                     <div class="form-outline flex-fill mb-0">
-                      &nbsp;<label class="form-label" for="form3Example1c">Soyadınız</label>
-                        <br />
-                        <br />
-                       <label class="form-label" for="form3Example1c">
-                        <asp:TextBox  class="form-control" ID="Txt_Mail" runat="server" Width="373px"></asp:TextBox>
+                      &nbsp;<label class="form-label" for="form3Example1c">Soyadınız<asp:TextBox  class="form-control" ID="Txt_Soyad" runat="server" Width="373px"></asp:TextBox>
                         </label>
+                        &nbsp;<br />
+                        <br />
                     </div>
                   </div>
 
@@ -46,10 +43,12 @@
                     <div class="form-outline flex-fill mb-0">
                       &nbsp;<label class="form-label" for="form3Example3c">E posta adresiniz</label>
                         <br />
-                        <br />
+                        <label class="form-label" for="form3Example3c">
                        <label class="form-label" for="form3Example1c">
-                        <asp:TextBox  class="form-control" ID="Txt_TelNo" runat="server" Width="373px"></asp:TextBox>
+                        <asp:TextBox  class="form-control" ID="Txt_Mail" runat="server" Width="373px"></asp:TextBox>
                         </label>
+                        </label>
+                        <br />
                     </div>
                   </div>
 
@@ -58,10 +57,10 @@
                     <div class="form-outline flex-fill mb-0">
                       &nbsp;<label class="form-label" for="form3Example3c">Telefon Numaranız</label>
                         <br />
-                        <br />
                        <label class="form-label" for="form3Example1c">
-                        <asp:TextBox  class="form-control" ID="Txt_Sifre" runat="server" Width="373px"></asp:TextBox>
+                        <asp:TextBox  class="form-control" ID="Txt_TelNo" runat="server" Width="373px"></asp:TextBox>
                         </label>
+                        <br />
                     </div>
                   </div>
 
@@ -71,27 +70,23 @@
                     <div class="form-outline flex-fill mb-0">
                       &nbsp;<label class="form-label" for="form3Example4c">Şifreniz</label>
                         <br />
-                        <br />
                        <label class="form-label" for="form3Example1c">
-                        <asp:TextBox  class="form-control" ID="Txt_SifreYeniden" runat="server" Width="373px"></asp:TextBox>
+                        <asp:TextBox  class="form-control" ID="Txt_Sifre" runat="server" Width="373px"></asp:TextBox>
                         </label>
+                        <br />
                     </div>
                   </div>
 
                   <div class="d-flex flex-row align-items-center mb-4">
                     <i class="fas fa-key fa-lg me-3 fa-fw"></i>
                     <div class="form-outline flex-fill mb-0">
-                      &nbsp;<label class="form-label" for="form3Example4cd">Şifrenizi tekrar giriniz</label>
+                      &nbsp;
                         <br />
                     </div>
                   </div>
 
                   <div class="form-check d-flex justify-content-center mb-5">
-                    <input class="form-check-input me-2" type="checkbox" value="" id="form2Example3c" style="width: 2.6em; height: 1.2em" />
-                    <label class="form-check-label" for="form2Example3">
-                      Siteyi kullanmak için gerekli tüm hizmet şartlarını kabul ediyorum. <a href="#!">Hizmet şartlarını görüntülemek için tıkla</a>
-                    </label>
-                  </div>
+                    &nbsp;</div>
 
                   <div class="d-flex justify-content-center mx-4 mb-3 mb-lg-4">
                      <asp:Button class="btn btn-primary btn-lg" ID="Button1" runat="server" OnClick="Button1_Click" Text="Kayıt Ol" />
@@ -102,9 +97,7 @@
               </div>
               <div class="col-md-10 col-lg-6 col-xl-7 d-flex align-items-center order-1 order-lg-2">
 
-                <img src="Resimler/kayit_ol.jpg" class="img-fluid" alt="Sample image">
-                  
-              </div>
+                &nbsp;</div>
               </div>
             </div>
           </div>
